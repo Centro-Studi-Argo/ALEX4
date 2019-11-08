@@ -1,0 +1,7 @@
+Version 1.01
+------------
+- Fixed FramePositioning.java to properly use the numFramesWide variable in the calculation of xLoc in the the private cascadeInternalFrame method (numFramesHigh was mistakenly used in version 1.0). Thanks to Francesco Furfari <francesco.furfari@guest.cnuce.cnr.it> for pointing this out.
+
+- Fixed BaseInternalFrame.java to properly save the size when manually-built internal frames are added. This was done via the addition of the addNotify() method. Thanks to Francesco Furfari <francesco.furfari@guest.cnuce.cnr.it> for the fix.
+
+- Added UML diagram to package-summary.html Javadoc file

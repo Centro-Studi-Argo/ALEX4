@@ -1,0 +1,1 @@
+javac -classpath ..\scrollabledesktop.jar *.java

@@ -1,0 +1,56 @@
+numberVoters : 100 :// Number of voters per uninominal district
+probPreferred : 0.9 :// the preferred candidate
+numberParties : 3 :// Number of parties
+totalNumberVoters : 1000 :// Total number of voters
+probFirst : 0.8 :// the first adjacent party
+probSecond : 0.1 :// the second adjacent party
+numberUninominalDistricts : 10 :// Number of uninominal districts
+numberPlurinominalDistricts : 10 :// Number of plurinominal districts
+numberCandidates : 1 :// Number of candidates per plurinominal districts
+
+party_1_name:Party 1 : Party name
+party_1_name:Party 1 : Party name
+party_1_share:33 : //Share(%)
+party_1_major:false :// Major?
+party_1_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_1_coefficient:1.0 :// Concentration coefficient
+party_1_distance:0.0 :// Position on a left-right axis
+
+party_2_name:Party 2 : Party name
+party_2_name:Party 2 : Party name
+party_2_share:33 : //Share(%)
+party_2_major:false :// Major?
+party_2_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_2_coefficient:1.0 :// Concentration coefficient
+party_2_distance:0.0 :// Position on a left-right axis
+
+party_3_name:Party 3 : Party name
+party_3_name:Party 3 : Party name
+party_3_share:34 : //Share(%)
+party_3_major:false :// Major?
+party_3_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_3_coefficient:1.0 :// Concentration coefficient
+party_3_distance:0.0 :// Position on a left-right axis
+
+
+parliament_name:One-District Proportionality - None - Majority at: 70.0
+
+majorityLevel:70.0
+refAllocSeats_party_1:3
+refAllocSeats_party_2:3
+refAllocSeats_party_3:4
+
+allocSeats_party_1:2
+allocSeats_party_2:6
+allocSeats_party_3:2
+
+refVotes_party_1:330
+refVotes_party_2:330
+refVotes_party_3:340
+
+votes_party_1:330
+votes_party_2:330
+votes_party_3:340
+
+
+END PARLIAMENT

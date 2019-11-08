@@ -1,0 +1,80 @@
+numberVoters : 100 :// Number of voters per uninominal district
+probPreferred : 0.9 :// the preferred candidate
+numberParties : 5 :// Number of parties
+totalNumberVoters : 1000 :// Total number of voters
+probFirst : 0.8 :// the first adjacent party
+probSecond : 0.1 :// the second adjacent party
+numberUninominalDistricts : 10 :// Number of uninominal districts
+numberPlurinominalDistricts : 10 :// Number of plurinominal districts
+numberCandidates : 1 :// Number of candidates per plurinominal districts
+
+party_1_name:ABC : Party name
+party_1_name:ABC : Party name
+party_1_share:20.0 : //Share(%)
+party_1_major:false :// Major?
+party_1_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_1_coefficient:1.0 :// Concentration coefficient
+party_1_distance:4.0 :// Position on a left-right axis
+
+party_2_name:DEF : Party name
+party_2_name:DEF : Party name
+party_2_share:12.0 : //Share(%)
+party_2_major:false :// Major?
+party_2_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_2_coefficient:1.0 :// Concentration coefficient
+party_2_distance:12.0 :// Position on a left-right axis
+
+party_3_name:GHI : Party name
+party_3_name:GHI : Party name
+party_3_share:35.0 : //Share(%)
+party_3_major:true :// Major?
+party_3_concentration:2: // <html>Number of districts in which<br>the party is concentrated?
+party_3_coefficient:1.5 :// Concentration coefficient
+party_3_distance:50.0 :// Position on a left-right axis
+
+party_4_name:JKL : Party name
+party_4_name:JKL : Party name
+party_4_share:15.0 : //Share(%)
+party_4_major:false :// Major?
+party_4_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_4_coefficient:1.0 :// Concentration coefficient
+party_4_distance:75.0 :// Position on a left-right axis
+
+party_5_name:MNO : Party name
+party_5_name:MNO : Party name
+party_5_share:18.0 : //Share(%)
+party_5_major:false :// Major?
+party_5_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_5_coefficient:1.0 :// Concentration coefficient
+party_5_distance:80.0 :// Position on a left-right axis
+
+
+parliament_name:Runoff Majority - Majority at: 70.0
+
+majorityLevel:70.0
+refAllocSeats_party_1:2
+refAllocSeats_party_2:1
+refAllocSeats_party_3:3
+refAllocSeats_party_4:2
+refAllocSeats_party_5:2
+
+allocSeats_party_1:0
+allocSeats_party_2:0
+allocSeats_party_3:9
+allocSeats_party_4:0
+allocSeats_party_5:1
+
+refVotes_party_1:200
+refVotes_party_2:120
+refVotes_party_3:350
+refVotes_party_4:150
+refVotes_party_5:180
+
+votes_party_1:200
+votes_party_2:120
+votes_party_3:350
+votes_party_4:150
+votes_party_5:180
+
+
+END PARLIAMENT

@@ -1,0 +1,176 @@
+numberUninominalDistricts : 160 :// Number of uninominal districts
+numberCandidates : 20 :// Number of candidates per plurinominal districts
+numberVoters : 300 :// Number of voters per uninominal district
+probSecond : 0.1 :// the second adjacent party
+numberPlurinominalDistricts : 8 :// Number of plurinominal districts
+probPreferred : 0.9 :// the preferred candidate
+probFirst : 0.8 :// the first adjacent party
+totalNumberVoters : 48000 :// Total number of voters
+numberParties : 13 :// Number of parties
+
+party_1_name:Party 1 : Party name
+party_1_name:Party 1 : Party name
+party_1_share:1.13 : //Share(%)
+party_1_major:false :// Major?
+party_1_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_1_coefficient:1.0 :// Concentration coefficient
+party_1_distance:0.0 :// Position on a left-right axis
+
+party_2_name:Party 2 : Party name
+party_2_name:Party 2 : Party name
+party_2_share:3.56 : //Share(%)
+party_2_major:false :// Major?
+party_2_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_2_coefficient:1.0 :// Concentration coefficient
+party_2_distance:0.0 :// Position on a left-right axis
+
+party_3_name:Party 3 : Party name
+party_3_name:Party 3 : Party name
+party_3_share:33.07 : //Share(%)
+party_3_major:true :// Major?
+party_3_concentration:5: // <html>Number of districts in which<br>the party is concentrated?
+party_3_coefficient:1.13 :// Concentration coefficient
+party_3_distance:0.0 :// Position on a left-right axis
+
+party_4_name:Party 4 : Party name
+party_4_name:Party 4 : Party name
+party_4_share:19.52 : //Share(%)
+party_4_major:true :// Major?
+party_4_concentration:40: // <html>Number of districts in which<br>the party is concentrated?
+party_4_coefficient:1.11 :// Concentration coefficient
+party_4_distance:0.0 :// Position on a left-right axis
+
+party_5_name:Party 5 : Party name
+party_5_name:Party 5 : Party name
+party_5_share:2.74 : //Share(%)
+party_5_major:false :// Major?
+party_5_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_5_coefficient:1.0 :// Concentration coefficient
+party_5_distance:0.0 :// Position on a left-right axis
+
+party_6_name:Party 6 : Party name
+party_6_name:Party 6 : Party name
+party_6_share:0.58 : //Share(%)
+party_6_major:false :// Major?
+party_6_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_6_coefficient:1.0 :// Concentration coefficient
+party_6_distance:0.0 :// Position on a left-right axis
+
+party_7_name:Party 7 : Party name
+party_7_name:Party 7 : Party name
+party_7_share:0.55 : //Share(%)
+party_7_major:false :// Major?
+party_7_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_7_coefficient:1.0 :// Concentration coefficient
+party_7_distance:0.0 :// Position on a left-right axis
+
+party_8_name:Party 8 : Party name
+party_8_name:Party 8 : Party name
+party_8_share:0.41 : //Share(%)
+party_8_major:true :// Major?
+party_8_concentration:5: // <html>Number of districts in which<br>the party is concentrated?
+party_8_coefficient:24.0 :// Concentration coefficient
+party_8_distance:0.0 :// Position on a left-right axis
+
+party_9_name:Party 9 : Party name
+party_9_name:Party 9 : Party name
+party_9_share:1.3 : //Share(%)
+party_9_major:false :// Major?
+party_9_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_9_coefficient:1.0 :// Concentration coefficient
+party_9_distance:0.0 :// Position on a left-right axis
+
+party_10_name:Party 10 : Party name
+party_10_name:Party 10 : Party name
+party_10_share:17.59 : //Share(%)
+party_10_major:true :// Major?
+party_10_concentration:45: // <html>Number of districts in which<br>the party is concentrated?
+party_10_coefficient:1.11 :// Concentration coefficient
+party_10_distance:0.0 :// Position on a left-right axis
+
+party_11_name:Party 11 : Party name
+party_11_name:Party 11 : Party name
+party_11_share:14.16 : //Share(%)
+party_11_major:false :// Major?
+party_11_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_11_coefficient:1.0 :// Concentration coefficient
+party_11_distance:0.0 :// Position on a left-right axis
+
+party_12_name:Party 12 : Party name
+party_12_name:Party 12 : Party name
+party_12_share:4.45 : //Share(%)
+party_12_major:false :// Major?
+party_12_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_12_coefficient:1.0 :// Concentration coefficient
+party_12_distance:0.0 :// Position on a left-right axis
+
+party_13_name:Party 13 : Party name
+party_13_name:Party 13 : Party name
+party_13_share:0.94 : //Share(%)
+party_13_major:false :// Major?
+party_13_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_13_coefficient:1.0 :// Concentration coefficient
+party_13_distance:0.0 :// Position on a left-right axis
+
+
+parliament_name:One-District Proportionality - D'Hondt - Majority at: 50.0
+
+majorityLevel:50.0
+refAllocSeats_party_1:2
+refAllocSeats_party_2:6
+refAllocSeats_party_3:53
+refAllocSeats_party_4:31
+refAllocSeats_party_5:4
+refAllocSeats_party_6:1
+refAllocSeats_party_7:1
+refAllocSeats_party_8:1
+refAllocSeats_party_9:2
+refAllocSeats_party_10:28
+refAllocSeats_party_11:23
+refAllocSeats_party_12:7
+refAllocSeats_party_13:1
+
+allocSeats_party_1:1
+allocSeats_party_2:6
+allocSeats_party_3:55
+allocSeats_party_4:32
+allocSeats_party_5:4
+allocSeats_party_6:0
+allocSeats_party_7:0
+allocSeats_party_8:0
+allocSeats_party_9:2
+allocSeats_party_10:29
+allocSeats_party_11:23
+allocSeats_party_12:7
+allocSeats_party_13:1
+
+refVotes_party_1:542
+refVotes_party_2:1709
+refVotes_party_3:15874
+refVotes_party_4:9370
+refVotes_party_5:1315
+refVotes_party_6:278
+refVotes_party_7:264
+refVotes_party_8:197
+refVotes_party_9:624
+refVotes_party_10:8443
+refVotes_party_11:6797
+refVotes_party_12:2136
+refVotes_party_13:451
+
+votes_party_1:542
+votes_party_2:1709
+votes_party_3:15874
+votes_party_4:9370
+votes_party_5:1315
+votes_party_6:278
+votes_party_7:264
+votes_party_8:197
+votes_party_9:624
+votes_party_10:8443
+votes_party_11:6797
+votes_party_12:2136
+votes_party_13:451
+
+
+END PARLIAMENT

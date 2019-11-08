@@ -1,0 +1,486 @@
+/*   Copyright: Marie-Edith Bissey, Guido Ortona - 2007
+*    Dipartimento di Politiche Pubbliche e Scelte Collettive
+*    Universita' del Piemonte Orientale (Italia)
+*    Contact: bissey@sp.unipmn.it
+
+*    This file is part of ALEX4.1
+*
+*    ALEX4.1 is free software; you can redistribute it and/or modify
+*    it under the terms of the GNU General Public License as published by
+*    the Free Software Foundation; either version 2 of the License, or
+*    (at your option) any later version.
+*
+*    ALEX4.1 is distributed in the hope that it will be useful,
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*    GNU General Public License for more details.
+*
+*    You should have received a copy of the GNU General Public License
+*    along with ALEX4.1; if not, write to the Free Software
+*    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+package indexes;
+
+import java.lang.*;
+import java.util.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.Color.*;
+import javax.swing.*;
+import javax.swing.border.*;
+import javax.swing.table.*;
+import java.awt.Toolkit;
+import java.text.*;
+import java.io.*;
+import java.beans.*;
+
+import classesWrittenByOthers.*;
+import globals.*;
+import parliaments.*;
+import votingObjects.*;
+import gui.*;
+
+public class OwenIndex extends Index//// implements ParliamentEventListener
+	{
+	// global variables for the class
+	MainFrame mainFrame;
+	private double majorityLevel;
+	public String whatIndex = "OwenIndex";
+	final HashMap <Party,String>aPrioriUnions = new  HashMap<Party,String>();
+	ArrayList <Party>restrictedParties = new ArrayList<Party>();
+	HashMap <Integer,Double> owenIndex = new HashMap <Integer,Double> ();
+	int sizeForIndex = 0;
+
+	// constructor
+	public OwenIndex(Parliament parl,HashMap<Integer,Integer>map) {
+		super();
+System.out.println("CONSTRUCTING OWEN INDEX - and creating unions");
+		parliament=parl;
+		majorityLevel = parl.getMajorityLevel();
+		arrayOfParties = parl.getArrayOfParties();
+//		mainFrame = MainFrame.getInstance();
+//		indexValue = computeIndex();
+//System.out.println("indexValue computed - end of constructor");
+		// register an observer for parliament
+//		parl.addObserver(this);
+		Iterator <Party> p = arrayOfParties.iterator();
+		// define the a-priori unions of parties
+		// put default alphabet letter for all parties in the map
+		mapForIndex = map;
+		String alphabet = "abcdefghijklmnopqrstuvwxyz";
+//System.out.println("alphabet: "+alphabet);
+		int i=0;
+		while (p.hasNext()) {
+			Party pa = p.next();
+			Integer seats = mapForIndex.get(new Integer(pa.getName()));
+//			if (seats.intValue()>0) {
+//System.out.print("i "+i);
+//System.out.println(" corresponds to "+alphabet.charAt(i));
+				int modi = i/25;
+//System.out.println("modi: "+modi);
+				if (modi>=1) {
+					i = i-(25*modi);
+				}
+//System.out.print("i "+i);
+//System.out.println(" corresponds to "+alphabet.charAt(i));
+				aPrioriUnions.put(pa,String.valueOf(alphabet.charAt(i)));
+				++i;
+//			}
+		}
+	}
+
+	public OwenIndex(Parliament parl,HashMap<Integer,Integer>map,HashMap<Party,String>unions) {
+		super();
+System.out.println("CONSTRUCTING OWEN INDEX - and passing unions");
+		parliament=parl;
+		arrayOfParties = parl.getArrayOfParties();
+		majorityLevel = parl.getMajorityLevel();
+		mapForIndex = map;
+		Set <Party> keys = unions.keySet();
+		Iterator <Party> p = keys.iterator();
+		while (p.hasNext()) {
+			Party pa = p.next();
+			Integer seats = mapForIndex.get(new Integer(pa.getName()));
+			aPrioriUnions.put(pa,unions.get(pa));
+		}
+	}
+	
+	
+	/*
+	 * insert here description of the owen index
+	*/
+
+//////	public void setAPrioriUnions (HashMap<Party,String> map) { // used when computing governability indexes, when the union is defined by the government, not the user
+//////		Set <Party> keys = map.keySet();
+//////		Iterator <Party> p = keys.iterator();
+//////		while (p.hasNext()) {
+//////			Party pa = p.next();
+//////			aPrioriUnions.put(pa,map.get(pa));
+//////		}
+//////	}
+	
+	public JPanel parameters() {
+		// define panel to ask for "a" parameter, and if necessary, government
+System.out.println("create panel for owen parameters");
+		JPanel panel = new JPanel();
+		GridBagLayout gridbag = new GridBagLayout();
+		GridBagConstraints c = new GridBagConstraints();
+		c.fill = GridBagConstraints.HORIZONTAL;
+		panel.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
+		panel.setLayout(gridbag);
+		c.gridx = 0;
+		c.gridy = 0;
+		JLabel groupLabel = new JLabel(language.getString("labels","group"));
+		groupLabel.setToolTipText(language.getString("labels","groupToolTip"));
+		panel.add(groupLabel,c);
+		++c.gridy;
+		c.gridx=0;
+		Iterator <Party> p = arrayOfParties.iterator();
+		while (p.hasNext()) {
+			final Party pa = p.next();
+			if (aPrioriUnions.containsKey(pa)) {
+				JLabel name = new JLabel(pa.getNameParty());
+				panel.add(name,c);
+				++c.gridx;
+				final String val = aPrioriUnions.get(pa);
+				final JTextField valueGroup = new JTextField(val,1);
+				valueGroup.addActionListener( new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						// check that newval is a one-character string
+						String newval = valueGroup.getText();
+						if (newval.length()>1) {
+							JOptionPane.showMessageDialog(null,language.getString("labels","notALetterGroup"));						
+						} else if (newval.length()==0) {
+							valueGroup.setText(val);
+						} else {
+							valueGroup.setText(newval);
+							aPrioriUnions.remove(pa);
+							aPrioriUnions.put(pa,newval);
+						}
+					}
+				});
+				panel.add(valueGroup,c);
+				c.gridx = 0;
+				++c.gridy;
+			}
+		}
+		return panel;
+	}
+
+	
+	protected Object computeIndex() {
+System.out.println("a priori unions in owen: "+aPrioriUnions.toString());
+System.out.println("map for index in owen: "+mapForIndex.toString());
+		// get "unique" names of apriori unions: arrayList unionNames;
+		Collection <String> unionValues = aPrioriUnions.values();
+		ArrayList <String> unionNames = new ArrayList <String> ();
+		Iterator <String> uv = unionValues.iterator();
+		while (uv.hasNext()) {
+			String val = uv.next();
+			if (!(unionNames.contains(val))) {
+				unionNames.add(val);
+			}
+		}
+//System.out.println("size of unionValues: "+unionValues.size()+" and size of unionNames: "+unionNames.size());
+		HashMap <String,ArrayList<ArrayList<Party>>> allPermutationsParties = new HashMap<String,ArrayList<ArrayList<Party>>>();
+		// now for each union, get the list of permutations
+		uv = unionNames.iterator();
+		while (uv.hasNext()) {
+			String apname = uv.next();
+			// get all parties in the union;
+			ArrayList<Party> partiesInUnion = new ArrayList<Party>();
+			Set <Party> mapkeys = aPrioriUnions.keySet();
+			Iterator <Party> mp = mapkeys.iterator();
+			while (mp.hasNext()) {
+				Party pa = mp.next();
+				String name = aPrioriUnions.get(pa);
+				if (name.compareTo(apname)==0) {
+					partiesInUnion.add(pa);
+				}
+			}
+//System.out.println("got all "+partiesInUnion.size()+" parties in the union");
+			// get all the permutations of the parties and put in map
+			allPermutationsParties.put(apname,permuteParties(partiesInUnion));
+		}
+//System.out.println("all permutations of parties: "+allPermutationsParties.toString());
+
+		// now get all the permutations between unions
+		ArrayList<ArrayList<String>> allPermutationsUnions = permuteStrings(unionNames);
+//System.out.println("all permutations of unions: "+allPermutationsUnions.toString());
+
+		// nb of elements in the map indicate the nb of rows of the arrayList of Parties containing all the permutations for a given
+		// union
+		Set <String> keysPermutationsParties = allPermutationsParties.keySet();
+//System.out.println("get all keys of permutationsParties");
+		Iterator <String> kp = keysPermutationsParties.iterator();
+		int npp = 1;
+		while (kp.hasNext()) {
+			String kpp = kp.next();
+//System.out.println("kpp "+kpp);	
+			ArrayList<ArrayList<Party>> lp = allPermutationsParties.get(kpp);
+//System.out.println("lp found");
+			npp*=(lp.size());
+//System.out.println("npp becomes "+npp);
+		}
+		ArrayList<ArrayList<Party>> allPermutations = new ArrayList<ArrayList<Party>>();
+
+//System.out.println("npp: "+npp);
+		Iterator <ArrayList<String>> u = allPermutationsUnions.iterator();
+		while (u.hasNext()) {
+//System.out.println("LOOP ON U");
+			ArrayList<String> pu = u.next();
+			Iterator <String> ipu = pu.iterator();
+			ArrayList<ArrayList<Party>> allPermutationsTemp = new ArrayList<ArrayList<Party>>();
+			while (ipu.hasNext()) {
+				String name = ipu.next();  // get name of union
+//System.out.println("CONSIDERING UNION "+name);
+				ArrayList<ArrayList<Party>> lp = allPermutationsParties.get(name); // get corresponding permutations of parties
+//System.out.println("lp is "+lp.toString());
+				int change = npp/lp.size();
+//System.out.println("change is "+change);
+				for (int i=0; i<npp	; ++i) {
+					int idx = i/change;
+//System.out.println("i = "+i+" idx= "+idx);
+					ArrayList<Party> ppu = lp.get(idx);
+//System.out.println("ppu is "+ppu.toString());
+					ArrayList<Party> temp = new ArrayList<Party>();
+					if (allPermutationsTemp.size()>i) {
+//System.out.println("get temp from allPermutationsTemp");
+						temp = allPermutationsTemp.get(i);
+					}
+					temp.addAll(ppu);
+//System.out.println("temp is "+temp.toString());
+					if (allPermutationsTemp.size()>i) {
+//System.out.println("reset value in allPermutationsTemp");
+						allPermutationsTemp.set(i,temp);
+					} else {
+//System.out.println("add value in allPermutationsTemp");
+						allPermutationsTemp.add(temp);
+					}
+//System.out.println("\t constructing all permutations Temp "+allPermutationsTemp.toString());
+				}
+//System.out.println("all permutations Temp "+allPermutationsTemp.toString());
+			}
+//System.out.println("all permutations temp at then end of the loop, added to allPermutations" + allPermutationsTemp.toString());
+			allPermutations.addAll(allPermutationsTemp);
+		}
+//System.out.println("all possible "+allPermutations.size()+" permutations given unions: "+allPermutations.toString());
+
+		// NOW COMPUTE OWEN INDEX
+		// create map of results
+		HashMap <Integer,Integer> forOwen = new HashMap<Integer,Integer>();
+		// get the value at which majority is obtained
+//System.out.println("majorityLevel "+ majorityLevel);
+		Set<Integer> mkeys = mapForIndex.keySet();
+		Iterator <Integer> imkeys = mkeys.iterator();
+		sizeForIndex = 0;
+		while (imkeys.hasNext()) {
+			Integer mkey = imkeys.next();
+			Integer mval = mapForIndex.get(mkey);
+			sizeForIndex += mval.intValue();
+		}
+
+System.out.println("size for index "+ sizeForIndex);	
+
+
+		int majorityForIndex = (int)(sizeForIndex*majorityLevel/100);
+		if (majorityLevel==50) {
+			++majorityForIndex;
+		}
+//System.out.println("majority in seats: "+majorityForIndex);
+		// iterate over the list of permutations: for each permutation, find the party that attains majority
+		Iterator <ArrayList<Party>> iap = allPermutations.iterator();
+		while (iap.hasNext()) {
+			ArrayList<Party> ap = iap.next();
+			int sumSeats = 0;
+			Iterator<Party> ip = ap.iterator();
+//System.out.println("mapForIndex in owen "+mapForIndex.toString());
+			while (ip.hasNext()) {
+				Party party = ip.next();
+				Integer partIndex = new Integer(party.getName());
+				Integer seats = mapForIndex.get(partIndex);
+//System.out.print("partIndex "+partIndex.toString()+" seats "+ seats.toString());
+				sumSeats += seats.intValue();
+//System.out.println(" so sumSeats "+sumSeats);
+				if (sumSeats>=majorityForIndex) {
+//System.out.println("majority found, update forOwen and exit loop");
+					if (forOwen.containsKey(partIndex)) {
+						Integer val = forOwen.get(partIndex);
+						int newval = val.intValue() + 1;
+						forOwen.remove(partIndex);
+						forOwen.put(partIndex,new Integer(newval));
+					} else {
+						forOwen.put(partIndex,new Integer(1));
+					}
+					break;
+				}
+			}
+		}
+//System.out.println("for owen: "+forOwen.toString());		
+		String result = new String();
+		Iterator <Party> p = arrayOfParties.iterator();
+		int nbAllPerms = allPermutations.size();
+		while (p.hasNext()) {
+			Party pa = p.next();
+			Integer pname = pa.getName();
+			if (forOwen.containsKey(pname)) {
+				int val = (forOwen.get(pname)).intValue();
+				double ownenVal = (double)val/nbAllPerms;
+				owenIndex.put(pname,new Double(ownenVal));
+			} else {
+				owenIndex.put(pname,new Double(0.0));
+			}
+//System.out.println("party "+pa.getNameParty()+": "+aPrioriUnions.get(pa));
+			DecimalFormat df = new DecimalFormat("##.####");
+			String union = (aPrioriUnions.containsKey(pa)) ? aPrioriUnions.get(pa) : "-" ;
+			if (result.length()==0) {
+				result = "<html>"+pa.getNameParty()+" ("+union+"): "+df.format(owenIndex.get(pa.getName()))+" <br> ";
+			} else {
+				result += pa.getNameParty()+" ("+union+"): "+df.format(owenIndex.get(pa.getName()))+" <br> ";
+			}
+		}
+		indexValue=owenIndex;
+		setPowerMap(owenIndex);
+//		result+="-----------------------------";
+System.out.println("owenIndex: "+owenIndex.toString());
+		return(result);	
+	}// end of computeIndex;
+
+	public HashMap<Integer,Double> getMapOfValues () {
+		return owenIndex;
+	}
+	
+	protected ArrayList<ArrayList<Party>> permuteParties (ArrayList<Party> al) {
+		ArrayList<ArrayList<Party>> allPermutations = new ArrayList<ArrayList<Party>>();
+//System.out.println("in permuteParties");
+		if (al.size()<=1) {
+			allPermutations.add(al);
+			return allPermutations;
+		} else {
+			// separate the first party from the list
+			Party pa = al.get(0);
+			ArrayList<Party> remaining = new ArrayList<Party>();
+			for (int i=1;i<al.size();++i) {
+				Party pb = al.get(i);
+				remaining.add(pb);
+			}
+			// get all permutations of the rest of the parties
+			ArrayList<ArrayList<Party>> permutedRemaining = permuteParties(remaining);
+
+			// for each permutation
+			for (ArrayList<Party> pp : permutedRemaining) {
+				// add the first party in all possible positions
+				ArrayList<ArrayList<Party>> withFirst = insertAtAllPositions(pa,pp);
+				// put each result in the list of resulta
+				allPermutations.addAll(withFirst);
+			}
+			return allPermutations;
+		}
+
+	}
+
+	private ArrayList<ArrayList<Party>> insertAtAllPositions(Party p, ArrayList<Party>pl) {
+//System.out.println("in insert at all positions");
+//System.out.println("party p "+p.toString());
+//System.out.println("other list  has "+pl.size()+" parties: "+pl.toString());
+		ArrayList<ArrayList<Party>> result = new ArrayList<ArrayList<Party>>();
+		for (int i=0; i<=pl.size(); ++i) {
+			ArrayList<Party> inserted = new ArrayList<Party>();
+
+			// elements before insertion
+			for (int j=-1;j<i;++j) {
+//System.out.println("before: j="+j+", i="+i);
+				if (j>=0) {
+					Party pa = pl.get(j);
+					inserted.add(j,pa);
+				}
+			}
+			// insertion
+			inserted.add(i,p);
+			// elements after insertion
+			for (int j=i;j<pl.size();++j) {
+//System.out.println("after: j="+j+", i="+i);
+				if (j<pl.size()) {
+					Party pa = pl.get(j);
+					inserted.add(j+1,pa);
+				}
+			}
+			result.add(inserted);
+		}
+		return(result);
+	}
+
+
+	protected ArrayList<ArrayList<String>> permuteStrings (ArrayList<String> al) {
+		ArrayList<ArrayList<String>> allPermutations = new ArrayList<ArrayList<String>>();
+		if (al.size()<=1) {
+			allPermutations.add(al);
+			return allPermutations;
+		} else {
+			// separate the first String from the list
+			String pa = al.get(0);
+			ArrayList<String> remaining = new ArrayList<String>();
+			for (int i=1;i<al.size();++i) {
+				String pb = al.get(i);
+				remaining.add(pb);
+			}
+			// get all permutations of the rest of the parties
+			ArrayList<ArrayList<String>> permutedRemaining = permuteStrings(remaining);
+
+			// for each permutation
+			for (ArrayList<String> pp : permutedRemaining) {
+				// add the first party in all possible positions
+				ArrayList<ArrayList<String>> withFirst = insertAtAllPositions(pa,pp);
+				// put each result in the list of resulta
+				allPermutations.addAll(withFirst);
+			}
+			return allPermutations;
+		}
+
+	}
+
+	private ArrayList<ArrayList<String>> insertAtAllPositions(String p, ArrayList<String>pl) {
+		ArrayList<ArrayList<String>> result = new ArrayList<ArrayList<String>>();
+		for (int i=0; i<=pl.size(); ++i) {
+			ArrayList<String> inserted = new ArrayList<String>();
+			// elements before insertion
+			for (int j=-1;j<i;++j) {
+				if (j>=0) {
+					String pa = pl.get(j);
+					inserted.add(j,pa);
+				}
+			}
+			// insertion
+			inserted.add(i,p);
+			// elements after insertion
+			for (int j=i;j<pl.size();++j) {
+				if (j<pl.size()) {
+					String pa = pl.get(j);
+					inserted.add(j+1,pa);
+				}
+			}
+			result.add(inserted);
+		}
+		return(result);
+	}
+
+//	public SemiCircle graph () {
+//		// change the owenindex map to hold integers instead of doubles: * by 100
+//		Set <Integer> k = owenIndex.keySet();
+//		Iterator i = k.iterator();
+//		HashMap <Integer,Integer>forGraph = new HashMap<Integer,Integer>();
+//		while (i.hasNext()) {
+//			Integer inti = i.next();
+//			double val = (owenIndex.get(inti)).doubleValue();
+//			int vali = (int)(val*100);
+//			forGraph.put(inti,vali);
+//		}
+//		Dimension dimDesk = mainFrame.getScrollableDesktop().getSize();
+//		int height = (int)(dimDesk.height * 0.3);
+//		int width = (int)(dimDesk.width * 0.3);
+//		return (new SemiCircle(forGraph,new Dimension(size,size),arrayOfParties) );
+//	}
+//
+	
+}// end of class
+

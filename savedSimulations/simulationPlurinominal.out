@@ -1,0 +1,1117 @@
+nameRepository : sim_plurinominal
+descriptionRepository : 
+numberVoters : 100 :// Number of voters per uninominal district
+probPreferred : 0.9 :// the preferred candidate
+numberParties : 5 :// Number of parties
+totalNumberVoters : 1000 :// Total number of voters
+probFirst : 0.8 :// the first adjacent party
+probSecond : 0.1 :// the second adjacent party
+numberUninominalDistricts : 10 :// Number of uninominal districts
+numberPlurinominalDistricts : 5 :// Number of plurinominal districts
+numberCandidates : 2 :// Number of candidates per plurinominal districts
+
+party_1_name:ABC : Party name
+party_1_name:ABC : Party name
+party_1_share:20.0 : //Share(%)
+party_1_major:false :// Major?
+party_1_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_1_coefficient:1.0 :// Concentration coefficient
+party_1_distance:4.0 :// Position on a left-right axis
+
+party_2_name:DEF : Party name
+party_2_name:DEF : Party name
+party_2_share:12.0 : //Share(%)
+party_2_major:false :// Major?
+party_2_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_2_coefficient:1.0 :// Concentration coefficient
+party_2_distance:12.0 :// Position on a left-right axis
+
+party_3_name:GHI : Party name
+party_3_name:GHI : Party name
+party_3_share:35.0 : //Share(%)
+party_3_major:true :// Major?
+party_3_concentration:2: // <html>Number of districts in which<br>the party is concentrated?
+party_3_coefficient:1.5 :// Concentration coefficient
+party_3_distance:50.0 :// Position on a left-right axis
+
+party_4_name:JKL : Party name
+party_4_name:JKL : Party name
+party_4_share:15.0 : //Share(%)
+party_4_major:false :// Major?
+party_4_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_4_coefficient:1.0 :// Concentration coefficient
+party_4_distance:75.0 :// Position on a left-right axis
+
+party_5_name:MNO : Party name
+party_5_name:MNO : Party name
+party_5_share:18.0 : //Share(%)
+party_5_major:false :// Major?
+party_5_concentration:0: // <html>Number of districts in which<br>the party is concentrated?
+party_5_coefficient:1.0 :// Concentration coefficient
+party_5_distance:80.0 :// Position on a left-right axis
+
+
+candidate1_1:1_1
+candidate1_2:1_2
+candidate2_1:2_1
+candidate2_2:2_2
+candidate3_1:3_1
+candidate3_2:3_2
+candidate4_1:4_1
+candidate4_2:4_2
+candidate5_1:5_1
+candidate5_2:5_2
+
+voter_1_partyPreferences:[1, 3, 4, 5, 2]:
+voter_2_partyPreferences:[1, 2, 3, 4, 5]:
+voter_3_partyPreferences:[1, 2, 3, 5, 4]:
+voter_4_partyPreferences:[1, 2, 3, 4, 5]:
+voter_5_partyPreferences:[1, 3, 5, 2, 4]:
+voter_6_partyPreferences:[1, 2, 3, 5, 4]:
+voter_7_partyPreferences:[1, 2, 3, 5, 4]:
+voter_8_partyPreferences:[1, 2, 3, 4, 5]:
+voter_9_partyPreferences:[1, 3, 5, 2, 4]:
+voter_10_partyPreferences:[1, 2, 4, 3, 5]:
+voter_11_partyPreferences:[1, 2, 3, 4, 5]:
+voter_12_partyPreferences:[1, 2, 3, 4, 5]:
+voter_13_partyPreferences:[1, 4, 2, 3, 5]:
+voter_14_partyPreferences:[1, 2, 4, 3, 5]:
+voter_15_partyPreferences:[1, 2, 3, 4, 5]:
+voter_16_partyPreferences:[1, 2, 3, 4, 5]:
+voter_17_partyPreferences:[1, 2, 3, 4, 5]:
+voter_18_partyPreferences:[1, 2, 3, 4, 5]:
+voter_19_partyPreferences:[1, 2, 3, 4, 5]:
+voter_20_partyPreferences:[1, 2, 3, 4, 5]:
+voter_21_partyPreferences:[1, 2, 3, 4, 5]:
+voter_22_partyPreferences:[1, 2, 3, 4, 5]:
+voter_23_partyPreferences:[1, 2, 3, 4, 5]:
+voter_24_partyPreferences:[1, 2, 3, 5, 4]:
+voter_25_partyPreferences:[1, 3, 2, 4, 5]:
+voter_26_partyPreferences:[1, 2, 3, 4, 5]:
+voter_27_partyPreferences:[1, 2, 3, 4, 5]:
+voter_28_partyPreferences:[1, 2, 3, 4, 5]:
+voter_29_partyPreferences:[1, 3, 4, 2, 5]:
+voter_30_partyPreferences:[1, 2, 3, 4, 5]:
+voter_31_partyPreferences:[1, 2, 3, 4, 5]:
+voter_32_partyPreferences:[1, 2, 3, 4, 5]:
+voter_33_partyPreferences:[1, 2, 3, 4, 5]:
+voter_34_partyPreferences:[1, 2, 3, 4, 5]:
+voter_35_partyPreferences:[1, 2, 3, 4, 5]:
+voter_36_partyPreferences:[1, 2, 3, 4, 5]:
+voter_37_partyPreferences:[1, 2, 3, 4, 5]:
+voter_38_partyPreferences:[1, 2, 3, 4, 5]:
+voter_39_partyPreferences:[1, 2, 3, 4, 5]:
+voter_40_partyPreferences:[1, 3, 2, 4, 5]:
+voter_41_partyPreferences:[1, 2, 3, 4, 5]:
+voter_42_partyPreferences:[1, 2, 3, 4, 5]:
+voter_43_partyPreferences:[1, 2, 3, 4, 5]:
+voter_44_partyPreferences:[1, 3, 2, 5, 4]:
+voter_45_partyPreferences:[1, 2, 3, 5, 4]:
+voter_46_partyPreferences:[1, 2, 3, 4, 5]:
+voter_47_partyPreferences:[1, 2, 3, 5, 4]:
+voter_48_partyPreferences:[1, 2, 3, 4, 5]:
+voter_49_partyPreferences:[1, 4, 2, 3, 5]:
+voter_50_partyPreferences:[1, 2, 4, 3, 5]:
+voter_51_partyPreferences:[1, 2, 3, 4, 5]:
+voter_52_partyPreferences:[1, 2, 3, 4, 5]:
+voter_53_partyPreferences:[1, 4, 2, 3, 5]:
+voter_54_partyPreferences:[1, 2, 5, 3, 4]:
+voter_55_partyPreferences:[1, 2, 3, 4, 5]:
+voter_56_partyPreferences:[1, 2, 3, 4, 5]:
+voter_57_partyPreferences:[1, 5, 2, 4, 3]:
+voter_58_partyPreferences:[1, 2, 5, 3, 4]:
+voter_59_partyPreferences:[1, 2, 3, 4, 5]:
+voter_60_partyPreferences:[1, 2, 3, 4, 5]:
+voter_61_partyPreferences:[1, 2, 3, 4, 5]:
+voter_62_partyPreferences:[1, 2, 5, 3, 4]:
+voter_63_partyPreferences:[1, 2, 3, 4, 5]:
+voter_64_partyPreferences:[1, 4, 5, 2, 3]:
+voter_65_partyPreferences:[1, 2, 3, 4, 5]:
+voter_66_partyPreferences:[1, 2, 4, 3, 5]:
+voter_67_partyPreferences:[1, 2, 3, 4, 5]:
+voter_68_partyPreferences:[1, 4, 2, 5, 3]:
+voter_69_partyPreferences:[1, 2, 3, 4, 5]:
+voter_70_partyPreferences:[1, 2, 5, 3, 4]:
+voter_71_partyPreferences:[1, 2, 3, 4, 5]:
+voter_72_partyPreferences:[1, 4, 5, 2, 3]:
+voter_73_partyPreferences:[1, 2, 3, 4, 5]:
+voter_74_partyPreferences:[1, 2, 5, 3, 4]:
+voter_75_partyPreferences:[1, 2, 4, 3, 5]:
+voter_76_partyPreferences:[1, 2, 3, 4, 5]:
+voter_77_partyPreferences:[1, 2, 3, 4, 5]:
+voter_78_partyPreferences:[1, 2, 5, 3, 4]:
+voter_79_partyPreferences:[1, 2, 3, 4, 5]:
+voter_80_partyPreferences:[1, 3, 2, 4, 5]:
+voter_81_partyPreferences:[1, 2, 4, 3, 5]:
+voter_82_partyPreferences:[1, 2, 3, 4, 5]:
+voter_83_partyPreferences:[1, 2, 3, 4, 5]:
+voter_84_partyPreferences:[1, 3, 2, 5, 4]:
+voter_85_partyPreferences:[1, 2, 5, 3, 4]:
+voter_86_partyPreferences:[1, 2, 3, 4, 5]:
+voter_87_partyPreferences:[1, 2, 3, 4, 5]:
+voter_88_partyPreferences:[1, 5, 2, 4, 3]:
+voter_89_partyPreferences:[1, 2, 5, 3, 4]:
+voter_90_partyPreferences:[1, 2, 3, 5, 4]:
+voter_91_partyPreferences:[1, 2, 3, 4, 5]:
+voter_92_partyPreferences:[1, 5, 2, 3, 4]:
+voter_93_partyPreferences:[1, 2, 5, 3, 4]:
+voter_94_partyPreferences:[1, 2, 4, 3, 5]:
+voter_95_partyPreferences:[1, 2, 3, 4, 5]:
+voter_96_partyPreferences:[1, 2, 3, 5, 4]:
+voter_97_partyPreferences:[1, 2, 3, 5, 4]:
+voter_98_partyPreferences:[1, 2, 3, 4, 5]:
+voter_99_partyPreferences:[1, 3, 2, 5, 4]:
+voter_100_partyPreferences:[1, 2, 3, 4, 5]:
+voter_101_partyPreferences:[1, 2, 5, 3, 4]:
+voter_102_partyPreferences:[1, 2, 3, 5, 4]:
+voter_103_partyPreferences:[1, 3, 2, 4, 5]:
+voter_104_partyPreferences:[1, 2, 3, 4, 5]:
+voter_105_partyPreferences:[1, 2, 5, 3, 4]:
+voter_106_partyPreferences:[1, 2, 3, 4, 5]:
+voter_107_partyPreferences:[1, 5, 2, 3, 4]:
+voter_108_partyPreferences:[1, 2, 3, 4, 5]:
+voter_109_partyPreferences:[1, 2, 5, 3, 4]:
+voter_110_partyPreferences:[1, 2, 4, 3, 5]:
+voter_111_partyPreferences:[1, 5, 2, 3, 4]:
+voter_112_partyPreferences:[1, 2, 3, 4, 5]:
+voter_113_partyPreferences:[1, 2, 3, 4, 5]:
+voter_114_partyPreferences:[1, 2, 3, 4, 5]:
+voter_115_partyPreferences:[1, 2, 3, 4, 5]:
+voter_116_partyPreferences:[1, 2, 3, 4, 5]:
+voter_117_partyPreferences:[1, 2, 3, 4, 5]:
+voter_118_partyPreferences:[1, 2, 3, 4, 5]:
+voter_119_partyPreferences:[1, 3, 2, 4, 5]:
+voter_120_partyPreferences:[1, 2, 3, 4, 5]:
+voter_121_partyPreferences:[1, 2, 3, 4, 5]:
+voter_122_partyPreferences:[1, 2, 3, 4, 5]:
+voter_123_partyPreferences:[1, 3, 2, 5, 4]:
+voter_124_partyPreferences:[1, 2, 3, 4, 5]:
+voter_125_partyPreferences:[1, 2, 3, 4, 5]:
+voter_126_partyPreferences:[1, 2, 3, 4, 5]:
+voter_127_partyPreferences:[1, 3, 2, 4, 5]:
+voter_128_partyPreferences:[1, 3, 2, 4, 5]:
+voter_129_partyPreferences:[1, 2, 3, 4, 5]:
+voter_130_partyPreferences:[1, 2, 5, 3, 4]:
+voter_131_partyPreferences:[1, 2, 3, 4, 5]:
+voter_132_partyPreferences:[1, 4, 2, 3, 5]:
+voter_133_partyPreferences:[1, 2, 3, 4, 5]:
+voter_134_partyPreferences:[1, 2, 5, 3, 4]:
+voter_135_partyPreferences:[1, 2, 3, 4, 5]:
+voter_136_partyPreferences:[1, 5, 2, 3, 4]:
+voter_137_partyPreferences:[1, 2, 3, 4, 5]:
+voter_138_partyPreferences:[1, 2, 3, 4, 5]:
+voter_139_partyPreferences:[1, 2, 3, 4, 5]:
+voter_140_partyPreferences:[1, 5, 2, 3, 4]:
+voter_141_partyPreferences:[1, 2, 3, 4, 5]:
+voter_142_partyPreferences:[1, 2, 3, 4, 5]:
+voter_143_partyPreferences:[1, 2, 3, 4, 5]:
+voter_144_partyPreferences:[1, 3, 2, 5, 4]:
+voter_145_partyPreferences:[1, 2, 5, 3, 4]:
+voter_146_partyPreferences:[1, 2, 3, 5, 4]:
+voter_147_partyPreferences:[1, 2, 3, 5, 4]:
+voter_148_partyPreferences:[1, 3, 2, 4, 5]:
+voter_149_partyPreferences:[1, 2, 5, 3, 4]:
+voter_150_partyPreferences:[1, 2, 3, 4, 5]:
+voter_151_partyPreferences:[1, 2, 3, 4, 5]:
+voter_152_partyPreferences:[1, 3, 2, 5, 4]:
+voter_153_partyPreferences:[1, 2, 5, 4, 3]:
+voter_154_partyPreferences:[1, 2, 4, 3, 5]:
+voter_155_partyPreferences:[1, 2, 3, 5, 4]:
+voter_156_partyPreferences:[1, 3, 2, 4, 5]:
+voter_157_partyPreferences:[1, 2, 3, 4, 5]:
+voter_158_partyPreferences:[1, 2, 4, 3, 5]:
+voter_159_partyPreferences:[1, 2, 3, 4, 5]:
+voter_160_partyPreferences:[1, 2, 3, 4, 5]:
+voter_161_partyPreferences:[1, 2, 5, 3, 4]:
+voter_162_partyPreferences:[1, 2, 3, 4, 5]:
+voter_163_partyPreferences:[1, 3, 2, 4, 5]:
+voter_164_partyPreferences:[1, 2, 3, 5, 4]:
+voter_165_partyPreferences:[1, 2, 5, 3, 4]:
+voter_166_partyPreferences:[1, 2, 3, 5, 4]:
+voter_167_partyPreferences:[1, 3, 2, 5, 4]:
+voter_168_partyPreferences:[1, 2, 3, 4, 5]:
+voter_169_partyPreferences:[1, 2, 5, 4, 3]:
+voter_170_partyPreferences:[1, 2, 4, 3, 5]:
+voter_171_partyPreferences:[1, 3, 2, 4, 5]:
+voter_172_partyPreferences:[1, 2, 3, 4, 5]:
+voter_173_partyPreferences:[1, 2, 3, 4, 5]:
+voter_174_partyPreferences:[1, 2, 4, 3, 5]:
+voter_175_partyPreferences:[1, 3, 2, 4, 5]:
+voter_176_partyPreferences:[1, 5, 2, 3, 4]:
+voter_177_partyPreferences:[1, 2, 3, 4, 5]:
+voter_178_partyPreferences:[1, 2, 3, 4, 5]:
+voter_179_partyPreferences:[1, 2, 3, 4, 5]:
+voter_180_partyPreferences:[1, 2, 3, 4, 5]:
+voter_181_partyPreferences:[1, 2, 3, 4, 5]:
+voter_182_partyPreferences:[1, 2, 3, 4, 5]:
+voter_183_partyPreferences:[1, 2, 3, 4, 5]:
+voter_184_partyPreferences:[1, 2, 3, 4, 5]:
+voter_185_partyPreferences:[1, 2, 4, 5, 3]:
+voter_186_partyPreferences:[1, 2, 3, 4, 5]:
+voter_187_partyPreferences:[1, 2, 3, 4, 5]:
+voter_188_partyPreferences:[1, 2, 3, 4, 5]:
+voter_189_partyPreferences:[1, 2, 4, 3, 5]:
+voter_190_partyPreferences:[1, 2, 3, 5, 4]:
+voter_191_partyPreferences:[1, 2, 3, 4, 5]:
+voter_192_partyPreferences:[1, 2, 3, 4, 5]:
+voter_193_partyPreferences:[1, 2, 3, 4, 5]:
+voter_194_partyPreferences:[1, 2, 3, 4, 5]:
+voter_195_partyPreferences:[1, 4, 2, 3, 5]:
+voter_196_partyPreferences:[1, 2, 3, 4, 5]:
+voter_197_partyPreferences:[1, 2, 3, 4, 5]:
+voter_198_partyPreferences:[1, 2, 3, 4, 5]:
+voter_199_partyPreferences:[1, 2, 3, 4, 5]:
+voter_200_partyPreferences:[1, 2, 3, 4, 5]:
+voter_201_partyPreferences:[2, 1, 4, 3, 5]:
+voter_202_partyPreferences:[2, 1, 3, 4, 5]:
+voter_203_partyPreferences:[2, 1, 3, 4, 5]:
+voter_204_partyPreferences:[2, 1, 3, 5, 4]:
+voter_205_partyPreferences:[2, 1, 4, 5, 3]:
+voter_206_partyPreferences:[2, 3, 1, 4, 5]:
+voter_207_partyPreferences:[2, 1, 3, 4, 5]:
+voter_208_partyPreferences:[2, 1, 3, 4, 5]:
+voter_209_partyPreferences:[2, 1, 3, 4, 5]:
+voter_210_partyPreferences:[2, 1, 5, 3, 4]:
+voter_211_partyPreferences:[2, 4, 5, 1, 3]:
+voter_212_partyPreferences:[2, 1, 3, 4, 5]:
+voter_213_partyPreferences:[2, 1, 3, 4, 5]:
+voter_214_partyPreferences:[2, 1, 5, 3, 4]:
+voter_215_partyPreferences:[2, 4, 1, 3, 5]:
+voter_216_partyPreferences:[2, 1, 3, 4, 5]:
+voter_217_partyPreferences:[2, 1, 3, 4, 5]:
+voter_218_partyPreferences:[2, 1, 5, 3, 4]:
+voter_219_partyPreferences:[2, 4, 5, 1, 3]:
+voter_220_partyPreferences:[2, 1, 3, 4, 5]:
+voter_221_partyPreferences:[2, 1, 3, 4, 5]:
+voter_222_partyPreferences:[2, 1, 3, 4, 5]:
+voter_223_partyPreferences:[2, 4, 1, 3, 5]:
+voter_224_partyPreferences:[2, 1, 3, 4, 5]:
+voter_225_partyPreferences:[2, 1, 3, 4, 5]:
+voter_226_partyPreferences:[2, 5, 3, 1, 4]:
+voter_227_partyPreferences:[2, 1, 3, 4, 5]:
+voter_228_partyPreferences:[2, 1, 3, 4, 5]:
+voter_229_partyPreferences:[2, 1, 3, 4, 5]:
+voter_230_partyPreferences:[2, 5, 1, 3, 4]:
+voter_231_partyPreferences:[2, 1, 3, 4, 5]:
+voter_232_partyPreferences:[2, 1, 3, 4, 5]:
+voter_233_partyPreferences:[2, 1, 3, 4, 5]:
+voter_234_partyPreferences:[2, 5, 3, 1, 4]:
+voter_235_partyPreferences:[2, 1, 3, 4, 5]:
+voter_236_partyPreferences:[2, 1, 3, 4, 5]:
+voter_237_partyPreferences:[2, 1, 3, 4, 5]:
+voter_238_partyPreferences:[2, 5, 1, 3, 4]:
+voter_239_partyPreferences:[2, 1, 3, 4, 5]:
+voter_240_partyPreferences:[2, 1, 3, 4, 5]:
+voter_241_partyPreferences:[2, 1, 4, 3, 5]:
+voter_242_partyPreferences:[2, 3, 1, 5, 4]:
+voter_243_partyPreferences:[2, 1, 3, 5, 4]:
+voter_244_partyPreferences:[2, 1, 3, 4, 5]:
+voter_245_partyPreferences:[2, 1, 5, 3, 4]:
+voter_246_partyPreferences:[2, 3, 1, 4, 5]:
+voter_247_partyPreferences:[2, 1, 3, 4, 5]:
+voter_248_partyPreferences:[2, 1, 3, 4, 5]:
+voter_249_partyPreferences:[2, 1, 5, 3, 4]:
+voter_250_partyPreferences:[2, 3, 4, 5, 1]:
+voter_251_partyPreferences:[2, 1, 3, 5, 4]:
+voter_252_partyPreferences:[2, 1, 3, 4, 5]:
+voter_253_partyPreferences:[2, 1, 3, 4, 5]:
+voter_254_partyPreferences:[2, 3, 4, 1, 5]:
+voter_255_partyPreferences:[2, 1, 3, 4, 5]:
+voter_256_partyPreferences:[2, 1, 3, 4, 5]:
+voter_257_partyPreferences:[2, 1, 3, 4, 5]:
+voter_258_partyPreferences:[2, 1, 3, 4, 5]:
+voter_259_partyPreferences:[2, 5, 1, 3, 4]:
+voter_260_partyPreferences:[2, 1, 5, 3, 4]:
+voter_261_partyPreferences:[2, 1, 4, 3, 5]:
+voter_262_partyPreferences:[2, 1, 3, 4, 5]:
+voter_263_partyPreferences:[2, 5, 3, 4, 1]:
+voter_264_partyPreferences:[2, 1, 5, 3, 4]:
+voter_265_partyPreferences:[2, 1, 4, 3, 5]:
+voter_266_partyPreferences:[2, 1, 3, 4, 5]:
+voter_267_partyPreferences:[2, 5, 1, 3, 4]:
+voter_268_partyPreferences:[2, 1, 3, 4, 5]:
+voter_269_partyPreferences:[2, 1, 4, 3, 5]:
+voter_270_partyPreferences:[2, 1, 3, 4, 5]:
+voter_271_partyPreferences:[2, 1, 3, 4, 5]:
+voter_272_partyPreferences:[2, 1, 3, 4, 5]:
+voter_273_partyPreferences:[2, 1, 3, 4, 5]:
+voter_274_partyPreferences:[2, 1, 3, 4, 5]:
+voter_275_partyPreferences:[2, 3, 1, 4, 5]:
+voter_276_partyPreferences:[2, 1, 3, 4, 5]:
+voter_277_partyPreferences:[2, 1, 3, 4, 5]:
+voter_278_partyPreferences:[2, 1, 3, 4, 5]:
+voter_279_partyPreferences:[2, 3, 1, 4, 5]:
+voter_280_partyPreferences:[2, 1, 3, 4, 5]:
+voter_281_partyPreferences:[2, 1, 3, 4, 5]:
+voter_282_partyPreferences:[2, 1, 3, 4, 5]:
+voter_283_partyPreferences:[2, 3, 1, 4, 5]:
+voter_284_partyPreferences:[2, 1, 3, 4, 5]:
+voter_285_partyPreferences:[2, 1, 3, 4, 5]:
+voter_286_partyPreferences:[2, 1, 3, 4, 5]:
+voter_287_partyPreferences:[2, 5, 1, 3, 4]:
+voter_288_partyPreferences:[2, 1, 3, 4, 5]:
+voter_289_partyPreferences:[2, 1, 3, 4, 5]:
+voter_290_partyPreferences:[2, 3, 1, 4, 5]:
+voter_291_partyPreferences:[2, 1, 3, 4, 5]:
+voter_292_partyPreferences:[2, 1, 3, 4, 5]:
+voter_293_partyPreferences:[2, 1, 3, 4, 5]:
+voter_294_partyPreferences:[2, 3, 1, 4, 5]:
+voter_295_partyPreferences:[2, 1, 3, 4, 5]:
+voter_296_partyPreferences:[2, 1, 3, 4, 5]:
+voter_297_partyPreferences:[2, 1, 3, 4, 5]:
+voter_298_partyPreferences:[2, 4, 1, 3, 5]:
+voter_299_partyPreferences:[2, 1, 3, 4, 5]:
+voter_300_partyPreferences:[2, 1, 3, 4, 5]:
+voter_301_partyPreferences:[2, 1, 3, 4, 5]:
+voter_302_partyPreferences:[2, 4, 1, 3, 5]:
+voter_303_partyPreferences:[2, 1, 3, 4, 5]:
+voter_304_partyPreferences:[2, 1, 3, 5, 4]:
+voter_305_partyPreferences:[2, 1, 5, 3, 4]:
+voter_306_partyPreferences:[2, 1, 3, 5, 4]:
+voter_307_partyPreferences:[2, 1, 3, 5, 4]:
+voter_308_partyPreferences:[2, 1, 3, 4, 5]:
+voter_309_partyPreferences:[2, 1, 5, 3, 4]:
+voter_310_partyPreferences:[2, 1, 4, 3, 5]:
+voter_311_partyPreferences:[2, 1, 3, 4, 5]:
+voter_312_partyPreferences:[2, 1, 3, 4, 5]:
+voter_313_partyPreferences:[2, 1, 3, 5, 4]:
+voter_314_partyPreferences:[2, 3, 4, 1, 5]:
+voter_315_partyPreferences:[2, 1, 3, 4, 5]:
+voter_316_partyPreferences:[2, 1, 3, 4, 5]:
+voter_317_partyPreferences:[2, 1, 3, 4, 5]:
+voter_318_partyPreferences:[2, 3, 4, 1, 5]:
+voter_319_partyPreferences:[2, 1, 3, 4, 5]:
+voter_320_partyPreferences:[2, 1, 3, 4, 5]:
+voter_321_partyPreferences:[3, 4, 1, 2, 5]:
+voter_322_partyPreferences:[3, 4, 5, 2, 1]:
+voter_323_partyPreferences:[3, 4, 5, 2, 1]:
+voter_324_partyPreferences:[3, 4, 5, 1, 2]:
+voter_325_partyPreferences:[3, 5, 1, 4, 2]:
+voter_326_partyPreferences:[3, 4, 2, 1, 5]:
+voter_327_partyPreferences:[3, 4, 5, 1, 2]:
+voter_328_partyPreferences:[3, 4, 5, 2, 1]:
+voter_329_partyPreferences:[3, 5, 4, 2, 1]:
+voter_330_partyPreferences:[3, 4, 2, 5, 1]:
+voter_331_partyPreferences:[3, 4, 5, 2, 1]:
+voter_332_partyPreferences:[3, 4, 5, 2, 1]:
+voter_333_partyPreferences:[3, 5, 4, 2, 1]:
+voter_334_partyPreferences:[3, 4, 2, 5, 1]:
+voter_335_partyPreferences:[3, 4, 5, 2, 1]:
+voter_336_partyPreferences:[3, 4, 5, 2, 1]:
+voter_337_partyPreferences:[3, 4, 5, 2, 1]:
+voter_338_partyPreferences:[3, 2, 4, 1, 5]:
+voter_339_partyPreferences:[3, 4, 5, 2, 1]:
+voter_340_partyPreferences:[3, 4, 5, 2, 1]:
+voter_341_partyPreferences:[3, 4, 2, 5, 1]:
+voter_342_partyPreferences:[3, 2, 4, 5, 1]:
+voter_343_partyPreferences:[3, 4, 5, 2, 1]:
+voter_344_partyPreferences:[3, 4, 1, 5, 2]:
+voter_345_partyPreferences:[3, 4, 2, 5, 1]:
+voter_346_partyPreferences:[3, 2, 4, 5, 1]:
+voter_347_partyPreferences:[3, 4, 5, 2, 1]:
+voter_348_partyPreferences:[3, 4, 5, 2, 1]:
+voter_349_partyPreferences:[3, 4, 2, 5, 1]:
+voter_350_partyPreferences:[3, 4, 5, 1, 2]:
+voter_351_partyPreferences:[3, 4, 5, 1, 2]:
+voter_352_partyPreferences:[3, 4, 5, 2, 1]:
+voter_353_partyPreferences:[3, 2, 4, 5, 1]:
+voter_354_partyPreferences:[3, 4, 5, 2, 1]:
+voter_355_partyPreferences:[3, 4, 5, 2, 1]:
+voter_356_partyPreferences:[3, 4, 5, 2, 1]:
+voter_357_partyPreferences:[3, 2, 4, 5, 1]:
+voter_358_partyPreferences:[3, 4, 5, 2, 1]:
+voter_359_partyPreferences:[3, 4, 5, 2, 1]:
+voter_360_partyPreferences:[3, 4, 5, 2, 1]:
+voter_361_partyPreferences:[3, 4, 2, 5, 1]:
+voter_362_partyPreferences:[3, 4, 5, 2, 1]:
+voter_363_partyPreferences:[3, 4, 5, 2, 1]:
+voter_364_partyPreferences:[3, 4, 1, 2, 5]:
+voter_365_partyPreferences:[3, 4, 2, 1, 5]:
+voter_366_partyPreferences:[3, 4, 5, 2, 1]:
+voter_367_partyPreferences:[3, 4, 5, 2, 1]:
+voter_368_partyPreferences:[3, 4, 5, 2, 1]:
+voter_369_partyPreferences:[3, 5, 4, 2, 1]:
+voter_370_partyPreferences:[3, 4, 1, 5, 2]:
+voter_371_partyPreferences:[3, 4, 5, 2, 1]:
+voter_372_partyPreferences:[3, 4, 5, 2, 1]:
+voter_373_partyPreferences:[3, 1, 4, 5, 2]:
+voter_374_partyPreferences:[3, 4, 5, 2, 1]:
+voter_375_partyPreferences:[3, 4, 5, 2, 1]:
+voter_376_partyPreferences:[3, 4, 5, 2, 1]:
+voter_377_partyPreferences:[3, 1, 4, 5, 2]:
+voter_378_partyPreferences:[3, 4, 5, 2, 1]:
+voter_379_partyPreferences:[3, 4, 5, 2, 1]:
+voter_380_partyPreferences:[3, 4, 5, 2, 1]:
+voter_381_partyPreferences:[3, 1, 4, 5, 2]:
+voter_382_partyPreferences:[3, 4, 5, 2, 1]:
+voter_383_partyPreferences:[3, 4, 5, 2, 1]:
+voter_384_partyPreferences:[3, 4, 5, 2, 1]:
+voter_385_partyPreferences:[3, 4, 1, 5, 2]:
+voter_386_partyPreferences:[3, 1, 4, 5, 2]:
+voter_387_partyPreferences:[3, 4, 5, 1, 2]:
+voter_388_partyPreferences:[3, 4, 5, 2, 1]:
+voter_389_partyPreferences:[3, 4, 5, 2, 1]:
+voter_390_partyPreferences:[3, 2, 4, 1, 5]:
+voter_391_partyPreferences:[3, 4, 5, 2, 1]:
+voter_392_partyPreferences:[3, 4, 5, 2, 1]:
+voter_393_partyPreferences:[3, 4, 5, 2, 1]:
+voter_394_partyPreferences:[3, 4, 5, 1, 2]:
+voter_395_partyPreferences:[3, 4, 5, 2, 1]:
+voter_396_partyPreferences:[3, 4, 5, 2, 1]:
+voter_397_partyPreferences:[3, 5, 4, 2, 1]:
+voter_398_partyPreferences:[3, 4, 5, 2, 1]:
+voter_399_partyPreferences:[3, 4, 5, 2, 1]:
+voter_400_partyPreferences:[3, 4, 1, 5, 2]:
+voter_401_partyPreferences:[3, 4, 2, 5, 1]:
+voter_402_partyPreferences:[3, 5, 4, 2, 1]:
+voter_403_partyPreferences:[3, 4, 5, 2, 1]:
+voter_404_partyPreferences:[3, 4, 1, 5, 2]:
+voter_405_partyPreferences:[3, 4, 2, 5, 1]:
+voter_406_partyPreferences:[3, 1, 5, 4, 2]:
+voter_407_partyPreferences:[3, 4, 5, 2, 1]:
+voter_408_partyPreferences:[3, 4, 5, 2, 1]:
+voter_409_partyPreferences:[3, 4, 2, 5, 1]:
+voter_410_partyPreferences:[3, 1, 4, 5, 2]:
+voter_411_partyPreferences:[3, 4, 5, 2, 1]:
+voter_412_partyPreferences:[3, 4, 5, 1, 2]:
+voter_413_partyPreferences:[3, 4, 1, 5, 2]:
+voter_414_partyPreferences:[3, 1, 4, 5, 2]:
+voter_415_partyPreferences:[3, 4, 5, 1, 2]:
+voter_416_partyPreferences:[3, 4, 1, 5, 2]:
+voter_417_partyPreferences:[3, 2, 4, 1, 5]:
+voter_418_partyPreferences:[3, 4, 5, 2, 1]:
+voter_419_partyPreferences:[3, 4, 5, 2, 1]:
+voter_420_partyPreferences:[3, 4, 1, 5, 2]:
+voter_421_partyPreferences:[3, 2, 4, 5, 1]:
+voter_422_partyPreferences:[3, 4, 5, 2, 1]:
+voter_423_partyPreferences:[3, 4, 5, 2, 1]:
+voter_424_partyPreferences:[3, 4, 1, 5, 2]:
+voter_425_partyPreferences:[3, 1, 4, 5, 2]:
+voter_426_partyPreferences:[3, 4, 5, 2, 1]:
+voter_427_partyPreferences:[3, 4, 5, 1, 2]:
+voter_428_partyPreferences:[3, 4, 5, 2, 1]:
+voter_429_partyPreferences:[3, 1, 4, 2, 5]:
+voter_430_partyPreferences:[3, 4, 5, 2, 1]:
+voter_431_partyPreferences:[3, 4, 5, 2, 1]:
+voter_432_partyPreferences:[3, 4, 5, 2, 1]:
+voter_433_partyPreferences:[3, 5, 4, 2, 1]:
+voter_434_partyPreferences:[3, 4, 5, 2, 1]:
+voter_435_partyPreferences:[3, 4, 5, 2, 1]:
+voter_436_partyPreferences:[3, 4, 5, 2, 1]:
+voter_437_partyPreferences:[3, 5, 4, 2, 1]:
+voter_438_partyPreferences:[3, 4, 5, 2, 1]:
+voter_439_partyPreferences:[3, 4, 5, 2, 1]:
+voter_440_partyPreferences:[3, 4, 5, 2, 1]:
+voter_441_partyPreferences:[3, 5, 4, 2, 1]:
+voter_442_partyPreferences:[3, 4, 5, 2, 1]:
+voter_443_partyPreferences:[3, 4, 5, 2, 1]:
+voter_444_partyPreferences:[3, 4, 2, 5, 1]:
+voter_445_partyPreferences:[3, 5, 4, 2, 1]:
+voter_446_partyPreferences:[3, 4, 5, 2, 1]:
+voter_447_partyPreferences:[3, 4, 5, 2, 1]:
+voter_448_partyPreferences:[3, 5, 4, 2, 1]:
+voter_449_partyPreferences:[3, 4, 5, 2, 1]:
+voter_450_partyPreferences:[3, 4, 5, 2, 1]:
+voter_451_partyPreferences:[3, 4, 5, 2, 1]:
+voter_452_partyPreferences:[3, 5, 4, 2, 1]:
+voter_453_partyPreferences:[3, 4, 5, 2, 1]:
+voter_454_partyPreferences:[3, 4, 5, 2, 1]:
+voter_455_partyPreferences:[3, 4, 5, 2, 1]:
+voter_456_partyPreferences:[3, 5, 4, 2, 1]:
+voter_457_partyPreferences:[3, 4, 5, 2, 1]:
+voter_458_partyPreferences:[3, 4, 5, 2, 1]:
+voter_459_partyPreferences:[3, 4, 5, 2, 1]:
+voter_460_partyPreferences:[3, 1, 2, 4, 5]:
+voter_461_partyPreferences:[3, 4, 5, 2, 1]:
+voter_462_partyPreferences:[3, 4, 5, 2, 1]:
+voter_463_partyPreferences:[3, 4, 5, 2, 1]:
+voter_464_partyPreferences:[3, 4, 5, 1, 2]:
+voter_465_partyPreferences:[3, 4, 1, 5, 2]:
+voter_466_partyPreferences:[3, 4, 5, 2, 1]:
+voter_467_partyPreferences:[3, 4, 5, 1, 2]:
+voter_468_partyPreferences:[3, 4, 5, 2, 1]:
+voter_469_partyPreferences:[3, 4, 1, 5, 2]:
+voter_470_partyPreferences:[3, 4, 2, 1, 5]:
+voter_471_partyPreferences:[3, 4, 5, 2, 1]:
+voter_472_partyPreferences:[3, 4, 5, 2, 1]:
+voter_473_partyPreferences:[3, 4, 5, 2, 1]:
+voter_474_partyPreferences:[3, 4, 5, 2, 1]:
+voter_475_partyPreferences:[3, 4, 5, 2, 1]:
+voter_476_partyPreferences:[3, 5, 4, 2, 1]:
+voter_477_partyPreferences:[3, 4, 5, 2, 1]:
+voter_478_partyPreferences:[3, 4, 5, 2, 1]:
+voter_479_partyPreferences:[3, 4, 5, 2, 1]:
+voter_480_partyPreferences:[3, 4, 5, 2, 1]:
+voter_481_partyPreferences:[3, 4, 1, 5, 2]:
+voter_482_partyPreferences:[3, 4, 5, 2, 1]:
+voter_483_partyPreferences:[3, 4, 5, 2, 1]:
+voter_484_partyPreferences:[3, 4, 5, 1, 2]:
+voter_485_partyPreferences:[3, 4, 1, 5, 2]:
+voter_486_partyPreferences:[3, 4, 2, 5, 1]:
+voter_487_partyPreferences:[3, 4, 5, 2, 1]:
+voter_488_partyPreferences:[3, 4, 5, 2, 1]:
+voter_489_partyPreferences:[3, 4, 5, 2, 1]:
+voter_490_partyPreferences:[3, 4, 2, 5, 1]:
+voter_491_partyPreferences:[3, 5, 4, 2, 1]:
+voter_492_partyPreferences:[3, 4, 5, 2, 1]:
+voter_493_partyPreferences:[3, 4, 5, 2, 1]:
+voter_494_partyPreferences:[3, 4, 5, 2, 1]:
+voter_495_partyPreferences:[3, 5, 4, 2, 1]:
+voter_496_partyPreferences:[3, 2, 4, 5, 1]:
+voter_497_partyPreferences:[3, 4, 5, 2, 1]:
+voter_498_partyPreferences:[3, 4, 5, 2, 1]:
+voter_499_partyPreferences:[3, 4, 5, 2, 1]:
+voter_500_partyPreferences:[3, 2, 1, 4, 5]:
+voter_501_partyPreferences:[3, 4, 2, 5, 1]:
+voter_502_partyPreferences:[3, 4, 5, 2, 1]:
+voter_503_partyPreferences:[3, 4, 5, 2, 1]:
+voter_504_partyPreferences:[3, 2, 4, 5, 1]:
+voter_505_partyPreferences:[3, 4, 2, 5, 1]:
+voter_506_partyPreferences:[3, 4, 5, 2, 1]:
+voter_507_partyPreferences:[3, 4, 5, 2, 1]:
+voter_508_partyPreferences:[3, 2, 1, 4, 5]:
+voter_509_partyPreferences:[3, 4, 1, 5, 2]:
+voter_510_partyPreferences:[3, 4, 5, 2, 1]:
+voter_511_partyPreferences:[3, 4, 5, 1, 2]:
+voter_512_partyPreferences:[3, 4, 5, 2, 1]:
+voter_513_partyPreferences:[3, 4, 5, 2, 1]:
+voter_514_partyPreferences:[3, 2, 1, 5, 4]:
+voter_515_partyPreferences:[3, 4, 2, 5, 1]:
+voter_516_partyPreferences:[3, 4, 5, 2, 1]:
+voter_517_partyPreferences:[3, 4, 5, 2, 1]:
+voter_518_partyPreferences:[3, 2, 4, 5, 1]:
+voter_519_partyPreferences:[3, 4, 2, 5, 1]:
+voter_520_partyPreferences:[3, 4, 5, 2, 1]:
+voter_521_partyPreferences:[3, 4, 5, 2, 1]:
+voter_522_partyPreferences:[3, 2, 4, 5, 1]:
+voter_523_partyPreferences:[3, 4, 2, 5, 1]:
+voter_524_partyPreferences:[3, 4, 2, 5, 1]:
+voter_525_partyPreferences:[3, 4, 5, 2, 1]:
+voter_526_partyPreferences:[3, 2, 4, 5, 1]:
+voter_527_partyPreferences:[3, 4, 1, 5, 2]:
+voter_528_partyPreferences:[3, 4, 5, 2, 1]:
+voter_529_partyPreferences:[3, 4, 5, 2, 1]:
+voter_530_partyPreferences:[3, 5, 4, 2, 1]:
+voter_531_partyPreferences:[3, 4, 5, 2, 1]:
+voter_532_partyPreferences:[3, 4, 5, 2, 1]:
+voter_533_partyPreferences:[3, 4, 5, 2, 1]:
+voter_534_partyPreferences:[3, 5, 4, 2, 1]:
+voter_535_partyPreferences:[3, 4, 5, 2, 1]:
+voter_536_partyPreferences:[3, 4, 5, 2, 1]:
+voter_537_partyPreferences:[3, 4, 5, 2, 1]:
+voter_538_partyPreferences:[3, 5, 4, 2, 1]:
+voter_539_partyPreferences:[3, 4, 5, 2, 1]:
+voter_540_partyPreferences:[3, 4, 5, 2, 1]:
+voter_541_partyPreferences:[3, 4, 5, 2, 1]:
+voter_542_partyPreferences:[3, 5, 4, 2, 1]:
+voter_543_partyPreferences:[3, 4, 5, 2, 1]:
+voter_544_partyPreferences:[3, 4, 5, 2, 1]:
+voter_545_partyPreferences:[3, 5, 4, 2, 1]:
+voter_546_partyPreferences:[3, 4, 5, 2, 1]:
+voter_547_partyPreferences:[3, 4, 5, 2, 1]:
+voter_548_partyPreferences:[3, 4, 5, 2, 1]:
+voter_549_partyPreferences:[3, 5, 4, 2, 1]:
+voter_550_partyPreferences:[3, 4, 5, 2, 1]:
+voter_551_partyPreferences:[3, 4, 5, 2, 1]:
+voter_552_partyPreferences:[3, 4, 5, 2, 1]:
+voter_553_partyPreferences:[3, 5, 4, 2, 1]:
+voter_554_partyPreferences:[3, 4, 5, 2, 1]:
+voter_555_partyPreferences:[3, 4, 5, 2, 1]:
+voter_556_partyPreferences:[3, 4, 5, 2, 1]:
+voter_557_partyPreferences:[3, 1, 5, 4, 2]:
+voter_558_partyPreferences:[3, 4, 5, 2, 1]:
+voter_559_partyPreferences:[3, 4, 5, 2, 1]:
+voter_560_partyPreferences:[3, 4, 2, 1, 5]:
+voter_561_partyPreferences:[3, 4, 5, 1, 2]:
+voter_562_partyPreferences:[3, 2, 4, 5, 1]:
+voter_563_partyPreferences:[3, 4, 1, 5, 2]:
+voter_564_partyPreferences:[3, 4, 2, 5, 1]:
+voter_565_partyPreferences:[3, 4, 5, 2, 1]:
+voter_566_partyPreferences:[3, 4, 5, 2, 1]:
+voter_567_partyPreferences:[3, 4, 5, 2, 1]:
+voter_568_partyPreferences:[3, 4, 5, 1, 2]:
+voter_569_partyPreferences:[3, 5, 4, 1, 2]:
+voter_570_partyPreferences:[3, 4, 5, 2, 1]:
+voter_571_partyPreferences:[3, 4, 5, 2, 1]:
+voter_572_partyPreferences:[3, 4, 5, 2, 1]:
+voter_573_partyPreferences:[3, 5, 4, 2, 1]:
+voter_574_partyPreferences:[3, 4, 5, 2, 1]:
+voter_575_partyPreferences:[3, 4, 5, 2, 1]:
+voter_576_partyPreferences:[3, 4, 2, 5, 1]:
+voter_577_partyPreferences:[3, 4, 5, 2, 1]:
+voter_578_partyPreferences:[3, 4, 5, 2, 1]:
+voter_579_partyPreferences:[3, 4, 1, 5, 2]:
+voter_580_partyPreferences:[3, 4, 2, 1, 5]:
+voter_581_partyPreferences:[3, 4, 5, 1, 2]:
+voter_582_partyPreferences:[3, 4, 5, 1, 2]:
+voter_583_partyPreferences:[3, 4, 5, 1, 2]:
+voter_584_partyPreferences:[3, 5, 1, 4, 2]:
+voter_585_partyPreferences:[3, 4, 5, 2, 1]:
+voter_586_partyPreferences:[3, 4, 5, 2, 1]:
+voter_587_partyPreferences:[3, 4, 5, 2, 1]:
+voter_588_partyPreferences:[3, 5, 4, 2, 1]:
+voter_589_partyPreferences:[3, 4, 5, 1, 2]:
+voter_590_partyPreferences:[3, 4, 5, 2, 1]:
+voter_591_partyPreferences:[3, 4, 5, 2, 1]:
+voter_592_partyPreferences:[3, 4, 5, 2, 1]:
+voter_593_partyPreferences:[3, 1, 4, 5, 2]:
+voter_594_partyPreferences:[3, 4, 5, 2, 1]:
+voter_595_partyPreferences:[3, 4, 2, 5, 1]:
+voter_596_partyPreferences:[3, 4, 5, 2, 1]:
+voter_597_partyPreferences:[3, 1, 4, 5, 2]:
+voter_598_partyPreferences:[3, 4, 1, 5, 2]:
+voter_599_partyPreferences:[3, 4, 2, 5, 1]:
+voter_600_partyPreferences:[3, 4, 5, 2, 1]:
+voter_601_partyPreferences:[3, 1, 4, 5, 2]:
+voter_602_partyPreferences:[3, 4, 5, 2, 1]:
+voter_603_partyPreferences:[3, 4, 2, 5, 1]:
+voter_604_partyPreferences:[3, 4, 2, 5, 1]:
+voter_605_partyPreferences:[3, 4, 5, 2, 1]:
+voter_606_partyPreferences:[3, 4, 5, 2, 1]:
+voter_607_partyPreferences:[3, 4, 1, 5, 2]:
+voter_608_partyPreferences:[3, 2, 4, 5, 1]:
+voter_609_partyPreferences:[3, 4, 5, 2, 1]:
+voter_610_partyPreferences:[3, 4, 5, 2, 1]:
+voter_611_partyPreferences:[3, 4, 5, 2, 1]:
+voter_612_partyPreferences:[3, 2, 4, 5, 1]:
+voter_613_partyPreferences:[3, 4, 5, 2, 1]:
+voter_614_partyPreferences:[3, 4, 5, 2, 1]:
+voter_615_partyPreferences:[3, 4, 2, 5, 1]:
+voter_616_partyPreferences:[3, 1, 4, 5, 2]:
+voter_617_partyPreferences:[3, 4, 5, 2, 1]:
+voter_618_partyPreferences:[3, 4, 1, 5, 2]:
+voter_619_partyPreferences:[3, 4, 2, 5, 1]:
+voter_620_partyPreferences:[3, 4, 5, 2, 1]:
+voter_621_partyPreferences:[3, 4, 5, 2, 1]:
+voter_622_partyPreferences:[3, 4, 5, 2, 1]:
+voter_623_partyPreferences:[3, 4, 1, 5, 2]:
+voter_624_partyPreferences:[3, 5, 4, 2, 1]:
+voter_625_partyPreferences:[3, 4, 5, 2, 1]:
+voter_626_partyPreferences:[3, 4, 5, 2, 1]:
+voter_627_partyPreferences:[3, 4, 5, 2, 1]:
+voter_628_partyPreferences:[3, 5, 4, 2, 1]:
+voter_629_partyPreferences:[3, 4, 5, 2, 1]:
+voter_630_partyPreferences:[3, 4, 5, 2, 1]:
+voter_631_partyPreferences:[3, 4, 5, 2, 1]:
+voter_632_partyPreferences:[3, 5, 4, 2, 1]:
+voter_633_partyPreferences:[3, 4, 5, 2, 1]:
+voter_634_partyPreferences:[3, 4, 5, 2, 1]:
+voter_635_partyPreferences:[3, 4, 5, 2, 1]:
+voter_636_partyPreferences:[3, 2, 4, 5, 1]:
+voter_637_partyPreferences:[3, 4, 5, 2, 1]:
+voter_638_partyPreferences:[3, 4, 5, 2, 1]:
+voter_639_partyPreferences:[3, 4, 5, 2, 1]:
+voter_640_partyPreferences:[3, 4, 5, 2, 1]:
+voter_641_partyPreferences:[3, 2, 4, 5, 1]:
+voter_642_partyPreferences:[3, 4, 5, 2, 1]:
+voter_643_partyPreferences:[3, 4, 5, 2, 1]:
+voter_644_partyPreferences:[3, 4, 5, 1, 2]:
+voter_645_partyPreferences:[3, 2, 4, 5, 1]:
+voter_646_partyPreferences:[3, 4, 5, 2, 1]:
+voter_647_partyPreferences:[3, 4, 5, 2, 1]:
+voter_648_partyPreferences:[3, 4, 5, 2, 1]:
+voter_649_partyPreferences:[3, 4, 5, 2, 1]:
+voter_650_partyPreferences:[3, 4, 5, 1, 2]:
+voter_651_partyPreferences:[3, 4, 5, 1, 2]:
+voter_652_partyPreferences:[3, 4, 5, 2, 1]:
+voter_653_partyPreferences:[3, 4, 5, 2, 1]:
+voter_654_partyPreferences:[3, 4, 5, 2, 1]:
+voter_655_partyPreferences:[3, 4, 5, 2, 1]:
+voter_656_partyPreferences:[3, 4, 5, 2, 1]:
+voter_657_partyPreferences:[3, 5, 4, 2, 1]:
+voter_658_partyPreferences:[3, 4, 1, 5, 2]:
+voter_659_partyPreferences:[3, 4, 2, 5, 1]:
+voter_660_partyPreferences:[3, 4, 5, 2, 1]:
+voter_661_partyPreferences:[3, 2, 4, 5, 1]:
+voter_662_partyPreferences:[3, 4, 5, 2, 1]:
+voter_663_partyPreferences:[3, 4, 2, 5, 1]:
+voter_664_partyPreferences:[3, 4, 2, 5, 1]:
+voter_665_partyPreferences:[3, 2, 4, 5, 1]:
+voter_666_partyPreferences:[3, 4, 5, 2, 1]:
+voter_667_partyPreferences:[3, 4, 1, 5, 2]:
+voter_668_partyPreferences:[3, 4, 5, 1, 2]:
+voter_669_partyPreferences:[3, 2, 4, 5, 1]:
+voter_670_partyPreferences:[3, 4, 5, 2, 1]:
+voter_671_partyPreferences:[4, 5, 1, 3, 2]:
+voter_672_partyPreferences:[4, 3, 5, 2, 1]:
+voter_673_partyPreferences:[4, 5, 3, 2, 1]:
+voter_674_partyPreferences:[4, 5, 1, 3, 2]:
+voter_675_partyPreferences:[4, 5, 2, 3, 1]:
+voter_676_partyPreferences:[4, 1, 5, 3, 2]:
+voter_677_partyPreferences:[4, 5, 3, 2, 1]:
+voter_678_partyPreferences:[4, 5, 1, 3, 2]:
+voter_679_partyPreferences:[4, 5, 2, 3, 1]:
+voter_680_partyPreferences:[4, 1, 5, 3, 2]:
+voter_681_partyPreferences:[4, 5, 3, 2, 1]:
+voter_682_partyPreferences:[4, 5, 3, 2, 1]:
+voter_683_partyPreferences:[4, 5, 1, 3, 2]:
+voter_684_partyPreferences:[4, 1, 5, 3, 2]:
+voter_685_partyPreferences:[4, 5, 3, 2, 1]:
+voter_686_partyPreferences:[4, 5, 3, 2, 1]:
+voter_687_partyPreferences:[4, 5, 1, 3, 2]:
+voter_688_partyPreferences:[4, 3, 5, 2, 1]:
+voter_689_partyPreferences:[4, 5, 3, 2, 1]:
+voter_690_partyPreferences:[4, 5, 3, 2, 1]:
+voter_691_partyPreferences:[4, 5, 3, 2, 1]:
+voter_692_partyPreferences:[4, 3, 5, 2, 1]:
+voter_693_partyPreferences:[4, 5, 3, 2, 1]:
+voter_694_partyPreferences:[4, 5, 3, 2, 1]:
+voter_695_partyPreferences:[4, 5, 3, 2, 1]:
+voter_696_partyPreferences:[4, 3, 5, 2, 1]:
+voter_697_partyPreferences:[4, 5, 3, 2, 1]:
+voter_698_partyPreferences:[4, 5, 2, 3, 1]:
+voter_699_partyPreferences:[4, 5, 3, 2, 1]:
+voter_700_partyPreferences:[4, 3, 5, 2, 1]:
+voter_701_partyPreferences:[4, 5, 3, 2, 1]:
+voter_702_partyPreferences:[4, 5, 1, 3, 2]:
+voter_703_partyPreferences:[4, 5, 3, 2, 1]:
+voter_704_partyPreferences:[4, 5, 3, 2, 1]:
+voter_705_partyPreferences:[4, 5, 3, 2, 1]:
+voter_706_partyPreferences:[4, 5, 3, 2, 1]:
+voter_707_partyPreferences:[4, 3, 5, 2, 1]:
+voter_708_partyPreferences:[4, 5, 3, 2, 1]:
+voter_709_partyPreferences:[4, 5, 3, 2, 1]:
+voter_710_partyPreferences:[4, 5, 3, 2, 1]:
+voter_711_partyPreferences:[4, 3, 5, 2, 1]:
+voter_712_partyPreferences:[4, 5, 3, 2, 1]:
+voter_713_partyPreferences:[4, 5, 3, 2, 1]:
+voter_714_partyPreferences:[4, 5, 3, 2, 1]:
+voter_715_partyPreferences:[4, 3, 5, 2, 1]:
+voter_716_partyPreferences:[4, 5, 3, 2, 1]:
+voter_717_partyPreferences:[4, 5, 3, 2, 1]:
+voter_718_partyPreferences:[4, 5, 1, 3, 2]:
+voter_719_partyPreferences:[4, 3, 5, 2, 1]:
+voter_720_partyPreferences:[4, 2, 5, 1, 3]:
+voter_721_partyPreferences:[4, 5, 3, 1, 2]:
+voter_722_partyPreferences:[4, 5, 3, 2, 1]:
+voter_723_partyPreferences:[4, 5, 1, 3, 2]:
+voter_724_partyPreferences:[4, 2, 1, 5, 3]:
+voter_725_partyPreferences:[4, 5, 3, 2, 1]:
+voter_726_partyPreferences:[4, 5, 3, 1, 2]:
+voter_727_partyPreferences:[4, 5, 3, 1, 2]:
+voter_728_partyPreferences:[4, 5, 3, 2, 1]:
+voter_729_partyPreferences:[4, 5, 3, 1, 2]:
+voter_730_partyPreferences:[4, 5, 3, 2, 1]:
+voter_731_partyPreferences:[4, 5, 3, 2, 1]:
+voter_732_partyPreferences:[4, 5, 3, 2, 1]:
+voter_733_partyPreferences:[4, 5, 3, 2, 1]:
+voter_734_partyPreferences:[4, 5, 3, 1, 2]:
+voter_735_partyPreferences:[4, 5, 3, 2, 1]:
+voter_736_partyPreferences:[4, 5, 2, 3, 1]:
+voter_737_partyPreferences:[4, 5, 3, 2, 1]:
+voter_738_partyPreferences:[4, 5, 3, 2, 1]:
+voter_739_partyPreferences:[4, 1, 5, 3, 2]:
+voter_740_partyPreferences:[4, 5, 3, 1, 2]:
+voter_741_partyPreferences:[4, 5, 3, 1, 2]:
+voter_742_partyPreferences:[4, 5, 3, 2, 1]:
+voter_743_partyPreferences:[4, 5, 3, 1, 2]:
+voter_744_partyPreferences:[4, 5, 3, 2, 1]:
+voter_745_partyPreferences:[4, 5, 3, 2, 1]:
+voter_746_partyPreferences:[4, 5, 3, 1, 2]:
+voter_747_partyPreferences:[4, 5, 3, 2, 1]:
+voter_748_partyPreferences:[4, 5, 3, 2, 1]:
+voter_749_partyPreferences:[4, 5, 3, 2, 1]:
+voter_750_partyPreferences:[4, 5, 3, 2, 1]:
+voter_751_partyPreferences:[4, 5, 3, 2, 1]:
+voter_752_partyPreferences:[4, 5, 3, 2, 1]:
+voter_753_partyPreferences:[4, 5, 3, 2, 1]:
+voter_754_partyPreferences:[4, 5, 1, 3, 2]:
+voter_755_partyPreferences:[4, 3, 2, 5, 1]:
+voter_756_partyPreferences:[4, 5, 3, 2, 1]:
+voter_757_partyPreferences:[4, 5, 3, 2, 1]:
+voter_758_partyPreferences:[4, 5, 1, 3, 2]:
+voter_759_partyPreferences:[4, 2, 5, 3, 1]:
+voter_760_partyPreferences:[4, 5, 3, 2, 1]:
+voter_761_partyPreferences:[4, 5, 3, 2, 1]:
+voter_762_partyPreferences:[4, 5, 3, 2, 1]:
+voter_763_partyPreferences:[4, 1, 5, 3, 2]:
+voter_764_partyPreferences:[4, 5, 2, 1, 3]:
+voter_765_partyPreferences:[4, 5, 3, 2, 1]:
+voter_766_partyPreferences:[4, 5, 3, 2, 1]:
+voter_767_partyPreferences:[4, 1, 5, 2, 3]:
+voter_768_partyPreferences:[4, 5, 3, 2, 1]:
+voter_769_partyPreferences:[4, 5, 3, 2, 1]:
+voter_770_partyPreferences:[4, 5, 2, 3, 1]:
+voter_771_partyPreferences:[4, 5, 3, 2, 1]:
+voter_772_partyPreferences:[4, 5, 3, 2, 1]:
+voter_773_partyPreferences:[4, 5, 3, 2, 1]:
+voter_774_partyPreferences:[4, 5, 2, 3, 1]:
+voter_775_partyPreferences:[4, 5, 3, 2, 1]:
+voter_776_partyPreferences:[4, 5, 3, 2, 1]:
+voter_777_partyPreferences:[4, 5, 3, 2, 1]:
+voter_778_partyPreferences:[4, 5, 1, 3, 2]:
+voter_779_partyPreferences:[4, 5, 3, 2, 1]:
+voter_780_partyPreferences:[4, 5, 3, 2, 1]:
+voter_781_partyPreferences:[4, 5, 3, 2, 1]:
+voter_782_partyPreferences:[4, 5, 1, 3, 2]:
+voter_783_partyPreferences:[4, 3, 2, 5, 1]:
+voter_784_partyPreferences:[4, 2, 5, 3, 1]:
+voter_785_partyPreferences:[4, 5, 3, 1, 2]:
+voter_786_partyPreferences:[4, 5, 3, 2, 1]:
+voter_787_partyPreferences:[4, 5, 3, 2, 1]:
+voter_788_partyPreferences:[4, 2, 5, 3, 1]:
+voter_789_partyPreferences:[4, 5, 3, 1, 2]:
+voter_790_partyPreferences:[4, 5, 3, 1, 2]:
+voter_791_partyPreferences:[4, 5, 3, 1, 2]:
+voter_792_partyPreferences:[4, 1, 5, 3, 2]:
+voter_793_partyPreferences:[4, 5, 3, 2, 1]:
+voter_794_partyPreferences:[4, 5, 3, 2, 1]:
+voter_795_partyPreferences:[4, 5, 3, 2, 1]:
+voter_796_partyPreferences:[4, 1, 5, 3, 2]:
+voter_797_partyPreferences:[4, 5, 3, 2, 1]:
+voter_798_partyPreferences:[4, 5, 3, 2, 1]:
+voter_799_partyPreferences:[4, 5, 3, 2, 1]:
+voter_800_partyPreferences:[4, 5, 3, 2, 1]:
+voter_801_partyPreferences:[4, 5, 3, 2, 1]:
+voter_802_partyPreferences:[4, 5, 3, 1, 2]:
+voter_803_partyPreferences:[4, 2, 5, 3, 1]:
+voter_804_partyPreferences:[4, 5, 3, 2, 1]:
+voter_805_partyPreferences:[4, 5, 3, 2, 1]:
+voter_806_partyPreferences:[4, 5, 3, 2, 1]:
+voter_807_partyPreferences:[4, 2, 1, 5, 3]:
+voter_808_partyPreferences:[4, 5, 3, 1, 2]:
+voter_809_partyPreferences:[4, 5, 3, 2, 1]:
+voter_810_partyPreferences:[4, 5, 3, 1, 2]:
+voter_811_partyPreferences:[4, 2, 5, 3, 1]:
+voter_812_partyPreferences:[4, 5, 3, 2, 1]:
+voter_813_partyPreferences:[4, 5, 3, 2, 1]:
+voter_814_partyPreferences:[4, 5, 3, 2, 1]:
+voter_815_partyPreferences:[4, 2, 1, 5, 3]:
+voter_816_partyPreferences:[4, 5, 3, 2, 1]:
+voter_817_partyPreferences:[4, 5, 3, 2, 1]:
+voter_818_partyPreferences:[4, 5, 1, 3, 2]:
+voter_819_partyPreferences:[4, 3, 2, 5, 1]:
+voter_820_partyPreferences:[4, 5, 3, 2, 1]:
+voter_821_partyPreferences:[5, 4, 3, 2, 1]:
+voter_822_partyPreferences:[5, 4, 3, 2, 1]:
+voter_823_partyPreferences:[5, 3, 1, 4, 2]:
+voter_824_partyPreferences:[5, 4, 3, 2, 1]:
+voter_825_partyPreferences:[5, 4, 3, 2, 1]:
+voter_826_partyPreferences:[5, 4, 3, 2, 1]:
+voter_827_partyPreferences:[5, 3, 1, 4, 2]:
+voter_828_partyPreferences:[5, 4, 3, 2, 1]:
+voter_829_partyPreferences:[5, 4, 3, 1, 2]:
+voter_830_partyPreferences:[5, 4, 3, 2, 1]:
+voter_831_partyPreferences:[5, 1, 2, 4, 3]:
+voter_832_partyPreferences:[5, 4, 3, 2, 1]:
+voter_833_partyPreferences:[5, 4, 3, 2, 1]:
+voter_834_partyPreferences:[5, 3, 1, 4, 2]:
+voter_835_partyPreferences:[5, 4, 2, 3, 1]:
+voter_836_partyPreferences:[5, 4, 3, 2, 1]:
+voter_837_partyPreferences:[5, 4, 3, 2, 1]:
+voter_838_partyPreferences:[5, 3, 4, 2, 1]:
+voter_839_partyPreferences:[5, 4, 2, 3, 1]:
+voter_840_partyPreferences:[5, 4, 3, 2, 1]:
+voter_841_partyPreferences:[5, 4, 3, 2, 1]:
+voter_842_partyPreferences:[5, 3, 4, 2, 1]:
+voter_843_partyPreferences:[5, 4, 1, 3, 2]:
+voter_844_partyPreferences:[5, 4, 3, 2, 1]:
+voter_845_partyPreferences:[5, 4, 3, 2, 1]:
+voter_846_partyPreferences:[5, 1, 3, 4, 2]:
+voter_847_partyPreferences:[5, 4, 1, 3, 2]:
+voter_848_partyPreferences:[5, 4, 3, 2, 1]:
+voter_849_partyPreferences:[5, 4, 3, 2, 1]:
+voter_850_partyPreferences:[5, 4, 2, 3, 1]:
+voter_851_partyPreferences:[5, 4, 3, 2, 1]:
+voter_852_partyPreferences:[5, 4, 3, 2, 1]:
+voter_853_partyPreferences:[5, 4, 3, 2, 1]:
+voter_854_partyPreferences:[5, 4, 2, 3, 1]:
+voter_855_partyPreferences:[5, 4, 3, 2, 1]:
+voter_856_partyPreferences:[5, 4, 3, 2, 1]:
+voter_857_partyPreferences:[5, 4, 3, 2, 1]:
+voter_858_partyPreferences:[5, 3, 1, 4, 2]:
+voter_859_partyPreferences:[5, 4, 3, 2, 1]:
+voter_860_partyPreferences:[5, 4, 3, 2, 1]:
+voter_861_partyPreferences:[5, 4, 3, 2, 1]:
+voter_862_partyPreferences:[5, 3, 1, 4, 2]:
+voter_863_partyPreferences:[5, 4, 2, 3, 1]:
+voter_864_partyPreferences:[5, 4, 3, 2, 1]:
+voter_865_partyPreferences:[5, 4, 3, 2, 1]:
+voter_866_partyPreferences:[5, 4, 3, 2, 1]:
+voter_867_partyPreferences:[5, 4, 3, 2, 1]:
+voter_868_partyPreferences:[5, 4, 3, 2, 1]:
+voter_869_partyPreferences:[5, 3, 4, 2, 1]:
+voter_870_partyPreferences:[5, 4, 2, 3, 1]:
+voter_871_partyPreferences:[5, 4, 3, 2, 1]:
+voter_872_partyPreferences:[5, 4, 3, 2, 1]:
+voter_873_partyPreferences:[5, 3, 4, 2, 1]:
+voter_874_partyPreferences:[5, 4, 2, 3, 1]:
+voter_875_partyPreferences:[5, 4, 3, 2, 1]:
+voter_876_partyPreferences:[5, 4, 3, 2, 1]:
+voter_877_partyPreferences:[5, 3, 4, 2, 1]:
+voter_878_partyPreferences:[5, 4, 1, 3, 2]:
+voter_879_partyPreferences:[5, 4, 2, 3, 1]:
+voter_880_partyPreferences:[5, 4, 3, 1, 2]:
+voter_881_partyPreferences:[5, 4, 3, 1, 2]:
+voter_882_partyPreferences:[5, 1, 4, 2, 3]:
+voter_883_partyPreferences:[5, 4, 3, 2, 1]:
+voter_884_partyPreferences:[5, 4, 3, 1, 2]:
+voter_885_partyPreferences:[5, 4, 3, 2, 1]:
+voter_886_partyPreferences:[5, 1, 3, 4, 2]:
+voter_887_partyPreferences:[5, 4, 3, 1, 2]:
+voter_888_partyPreferences:[5, 4, 3, 2, 1]:
+voter_889_partyPreferences:[5, 4, 3, 2, 1]:
+voter_890_partyPreferences:[5, 1, 4, 3, 2]:
+voter_891_partyPreferences:[5, 4, 3, 2, 1]:
+voter_892_partyPreferences:[5, 4, 3, 2, 1]:
+voter_893_partyPreferences:[5, 4, 3, 2, 1]:
+voter_894_partyPreferences:[5, 4, 3, 2, 1]:
+voter_895_partyPreferences:[5, 4, 3, 1, 2]:
+voter_896_partyPreferences:[5, 4, 3, 2, 1]:
+voter_897_partyPreferences:[5, 4, 3, 2, 1]:
+voter_898_partyPreferences:[5, 4, 3, 2, 1]:
+voter_899_partyPreferences:[5, 4, 2, 3, 1]:
+voter_900_partyPreferences:[5, 4, 3, 2, 1]:
+voter_901_partyPreferences:[5, 4, 3, 2, 1]:
+voter_902_partyPreferences:[5, 3, 4, 2, 1]:
+voter_903_partyPreferences:[5, 4, 3, 2, 1]:
+voter_904_partyPreferences:[5, 4, 3, 2, 1]:
+voter_905_partyPreferences:[5, 4, 3, 2, 1]:
+voter_906_partyPreferences:[5, 3, 4, 2, 1]:
+voter_907_partyPreferences:[5, 4, 3, 2, 1]:
+voter_908_partyPreferences:[5, 4, 3, 1, 2]:
+voter_909_partyPreferences:[5, 4, 3, 2, 1]:
+voter_910_partyPreferences:[5, 3, 4, 2, 1]:
+voter_911_partyPreferences:[5, 4, 3, 1, 2]:
+voter_912_partyPreferences:[5, 4, 3, 2, 1]:
+voter_913_partyPreferences:[5, 4, 3, 2, 1]:
+voter_914_partyPreferences:[5, 4, 2, 3, 1]:
+voter_915_partyPreferences:[5, 1, 3, 4, 2]:
+voter_916_partyPreferences:[5, 4, 3, 2, 1]:
+voter_917_partyPreferences:[5, 4, 3, 2, 1]:
+voter_918_partyPreferences:[5, 4, 1, 3, 2]:
+voter_919_partyPreferences:[5, 1, 4, 3, 2]:
+voter_920_partyPreferences:[5, 4, 3, 2, 1]:
+voter_921_partyPreferences:[5, 4, 3, 2, 1]:
+voter_922_partyPreferences:[5, 4, 1, 2, 3]:
+voter_923_partyPreferences:[5, 4, 2, 3, 1]:
+voter_924_partyPreferences:[5, 4, 3, 2, 1]:
+voter_925_partyPreferences:[5, 4, 3, 2, 1]:
+voter_926_partyPreferences:[5, 4, 1, 3, 2]:
+voter_927_partyPreferences:[5, 4, 2, 3, 1]:
+voter_928_partyPreferences:[5, 4, 3, 2, 1]:
+voter_929_partyPreferences:[5, 4, 3, 2, 1]:
+voter_930_partyPreferences:[5, 2, 4, 3, 1]:
+voter_931_partyPreferences:[5, 4, 3, 2, 1]:
+voter_932_partyPreferences:[5, 4, 3, 2, 1]:
+voter_933_partyPreferences:[5, 4, 3, 2, 1]:
+voter_934_partyPreferences:[5, 2, 4, 3, 1]:
+voter_935_partyPreferences:[5, 4, 3, 2, 1]:
+voter_936_partyPreferences:[5, 4, 3, 2, 1]:
+voter_937_partyPreferences:[5, 4, 3, 2, 1]:
+voter_938_partyPreferences:[5, 4, 1, 2, 3]:
+voter_939_partyPreferences:[5, 4, 2, 3, 1]:
+voter_940_partyPreferences:[5, 4, 3, 2, 1]:
+voter_941_partyPreferences:[5, 3, 4, 2, 1]:
+voter_942_partyPreferences:[5, 4, 1, 3, 2]:
+voter_943_partyPreferences:[5, 4, 2, 3, 1]:
+voter_944_partyPreferences:[5, 4, 3, 2, 1]:
+voter_945_partyPreferences:[5, 4, 3, 2, 1]:
+voter_946_partyPreferences:[5, 3, 4, 2, 1]:
+voter_947_partyPreferences:[5, 4, 3, 2, 1]:
+voter_948_partyPreferences:[5, 4, 3, 1, 2]:
+voter_949_partyPreferences:[5, 4, 3, 1, 2]:
+voter_950_partyPreferences:[5, 2, 1, 4, 3]:
+voter_951_partyPreferences:[5, 4, 3, 1, 2]:
+voter_952_partyPreferences:[5, 4, 3, 2, 1]:
+voter_953_partyPreferences:[5, 4, 3, 2, 1]:
+voter_954_partyPreferences:[5, 2, 4, 3, 1]:
+voter_955_partyPreferences:[5, 4, 3, 2, 1]:
+voter_956_partyPreferences:[5, 4, 3, 2, 1]:
+voter_957_partyPreferences:[5, 4, 1, 3, 2]:
+voter_958_partyPreferences:[5, 2, 4, 1, 3]:
+voter_959_partyPreferences:[5, 4, 3, 2, 1]:
+voter_960_partyPreferences:[5, 4, 3, 1, 2]:
+voter_961_partyPreferences:[5, 1, 3, 4, 2]:
+voter_962_partyPreferences:[5, 4, 3, 1, 2]:
+voter_963_partyPreferences:[5, 4, 3, 1, 2]:
+voter_964_partyPreferences:[5, 4, 3, 2, 1]:
+voter_965_partyPreferences:[5, 1, 4, 2, 3]:
+voter_966_partyPreferences:[5, 4, 3, 2, 1]:
+voter_967_partyPreferences:[5, 4, 3, 2, 1]:
+voter_968_partyPreferences:[5, 4, 3, 1, 2]:
+voter_969_partyPreferences:[5, 1, 4, 3, 2]:
+voter_970_partyPreferences:[5, 4, 3, 2, 1]:
+voter_971_partyPreferences:[5, 4, 3, 2, 1]:
+voter_972_partyPreferences:[5, 4, 3, 2, 1]:
+voter_973_partyPreferences:[5, 1, 4, 3, 2]:
+voter_974_partyPreferences:[5, 4, 2, 3, 1]:
+voter_975_partyPreferences:[5, 4, 3, 2, 1]:
+voter_976_partyPreferences:[5, 4, 3, 2, 1]:
+voter_977_partyPreferences:[5, 3, 4, 2, 1]:
+voter_978_partyPreferences:[5, 4, 3, 2, 1]:
+voter_979_partyPreferences:[5, 4, 2, 3, 1]:
+voter_980_partyPreferences:[5, 4, 3, 2, 1]:
+voter_981_partyPreferences:[5, 3, 4, 2, 1]:
+voter_982_partyPreferences:[5, 4, 3, 2, 1]:
+voter_983_partyPreferences:[5, 4, 1, 3, 2]:
+voter_984_partyPreferences:[5, 4, 3, 2, 1]:
+voter_985_partyPreferences:[5, 3, 4, 2, 1]:
+voter_986_partyPreferences:[5, 4, 3, 2, 1]:
+voter_987_partyPreferences:[5, 4, 3, 2, 1]:
+voter_988_partyPreferences:[5, 4, 3, 2, 1]:
+voter_989_partyPreferences:[5, 3, 4, 2, 1]:
+voter_990_partyPreferences:[5, 4, 3, 2, 1]:
+voter_991_partyPreferences:[5, 4, 3, 2, 1]:
+voter_992_partyPreferences:[5, 3, 4, 2, 1]:
+voter_993_partyPreferences:[5, 4, 3, 2, 1]:
+voter_994_partyPreferences:[5, 4, 1, 2, 3]:
+voter_995_partyPreferences:[5, 4, 2, 3, 1]:
+voter_996_partyPreferences:[5, 3, 4, 2, 1]:
+voter_997_partyPreferences:[5, 4, 3, 2, 1]:
+voter_998_partyPreferences:[5, 4, 3, 2, 1]:
+voter_999_partyPreferences:[5, 4, 1, 3, 2]:
+voter_1000_partyPreferences:[5, 3, 4, 2, 1]:
+
+
+districtUninominal_1_nameOfDistrict : 1 :// Name of the uninominal district
+districtUninominal_1_concentratedMajorParty : true :// contains a major party?
+districtUninominal_1_nameMajorParty : 3 : //name of the major party
+districtUninominal_1_listOfVoters :[321 , 322 , 323 , 324 , 325 , 326 , 327 , 328 , 329 , 330 , 331 , 332 , 333 , 334 , 335 , 336 , 337 , 338 , 339 , 340 , 341 , 342 , 343 , 344 , 345 , 346 , 347 , 348 , 349 , 350 , 351 , 352 , 353 , 354 , 355 , 356 , 357 , 358 , 359 , 360 , 361 , 362 , 363 , 364 , 365 , 366 , 367 , 368 , 369 , 370 , 371 , 372 , 283 , 869 , 195 , 668 , 435 , 909 , 988 , 779 , 577 , 908 , 501 , 670 , 632 , 700 , 830 , 87 , 23 , 747 , 318 , 880 , 119 , 112 , 837 , 206 , 175 , 828 , 174 , 92 , 139 , 736 , 546 , 840 , 833 , 906 , 956 , 25 , 618 , 729 , 582 , 898 , 500 , 532 , 296 , 271 , 252 , 598 , 826 , 451 ]
+districtUninominal_2_nameOfDistrict : 2 :// Name of the uninominal district
+districtUninominal_2_concentratedMajorParty : true :// contains a major party?
+districtUninominal_2_nameMajorParty : 3 : //name of the major party
+districtUninominal_2_listOfVoters :[373 , 374 , 375 , 376 , 377 , 378 , 379 , 380 , 381 , 382 , 383 , 384 , 385 , 386 , 387 , 388 , 389 , 390 , 391 , 392 , 393 , 394 , 395 , 396 , 397 , 398 , 399 , 400 , 401 , 402 , 403 , 404 , 405 , 406 , 407 , 408 , 409 , 410 , 411 , 412 , 413 , 414 , 415 , 416 , 417 , 418 , 419 , 420 , 421 , 422 , 423 , 424 , 636 , 643 , 851 , 199 , 459 , 694 , 210 , 167 , 790 , 74 , 952 , 932 , 511 , 187 , 51 , 929 , 243 , 254 , 287 , 761 , 34 , 773 , 685 , 614 , 67 , 936 , 73 , 776 , 482 , 168 , 917 , 797 , 209 , 474 , 130 , 280 , 504 , 620 , 702 , 842 , 650 , 760 , 107 , 468 , 160 , 464 , 548 , 918 ]
+districtUninominal_3_nameOfDistrict : 3 :// Name of the uninominal district
+districtUninominal_3_concentratedMajorParty : false :// contains a major party?
+districtUninominal_3_nameMajorParty : 0 : //name of the major party
+districtUninominal_3_listOfVoters :[79 , 680 , 425 , 707 , 434 , 969 , 138 , 676 , 234 , 241 , 677 , 772 , 156 , 124 , 771 , 934 , 954 , 660 , 807 , 802 , 142 , 599 , 556 , 904 , 480 , 257 , 232 , 885 , 122 , 242 , 873 , 226 , 794 , 722 , 12 , 429 , 164 , 289 , 245 , 126 , 998 , 68 , 151 , 170 , 593 , 949 , 630 , 864 , 704 , 871 , 33 , 672 , 862 , 697 , 201 , 808 , 848 , 233 , 146 , 180 , 663 , 63 , 843 , 250 , 62 , 859 , 8 , 15 , 502 , 884 , 812 , 127 , 458 , 442 , 596 , 188 , 37 , 611 , 748 , 991 , 129 , 813 , 610 , 143 , 31 , 197 , 531 , 215 , 43 , 967 , 462 , 959 , 584 , 570 , 52 , 183 , 85 , 825 , 823 , 256 ]
+districtUninominal_4_nameOfDistrict : 4 :// Name of the uninominal district
+districtUninominal_4_concentratedMajorParty : false :// contains a major party?
+districtUninominal_4_nameMajorParty : 0 : //name of the major party
+districtUninominal_4_listOfVoters :[223 , 994 , 479 , 993 , 253 , 61 , 503 , 656 , 50 , 239 , 158 , 49 , 229 , 641 , 165 , 558 , 251 , 679 , 259 , 682 , 186 , 35 , 528 , 639 , 560 , 128 , 303 , 829 , 163 , 431 , 526 , 646 , 640 , 148 , 600 , 162 , 718 , 553 , 737 , 684 , 791 , 279 , 487 , 566 , 488 , 850 , 623 , 626 , 878 , 634 , 191 , 310 , 231 , 886 , 120 , 845 , 312 , 696 , 916 , 40 , 890 , 471 , 921 , 713 , 945 , 200 , 962 , 38 , 944 , 266 , 116 , 590 , 14 , 654 , 121 , 563 , 781 , 655 , 3 , 588 , 549 , 805 , 659 , 995 , 868 , 780 , 297 , 88 , 509 , 953 , 133 , 557 , 647 , 132 , 190 , 891 , 752 , 147 , 463 , 821 ]
+districtUninominal_5_nameOfDistrict : 5 :// Name of the uninominal district
+districtUninominal_5_concentratedMajorParty : false :// contains a major party?
+districtUninominal_5_nameMajorParty : 0 : //name of the major party
+districtUninominal_5_listOfVoters :[913 , 662 , 530 , 633 , 545 , 108 , 515 , 591 , 889 , 689 , 284 , 619 , 865 , 765 , 202 , 666 , 311 , 101 , 629 , 569 , 621 , 461 , 115 , 575 , 97 , 276 , 24 , 922 , 281 , 150 , 601 , 714 , 930 , 237 , 249 , 176 , 937 , 653 , 171 , 972 , 90 , 295 , 21 , 770 , 224 , 883 , 978 , 440 , 567 , 282 , 705 , 514 , 111 , 568 , 788 , 537 , 799 , 16 , 877 , 690 , 75 , 753 , 227 , 141 , 204 , 309 , 144 , 745 , 78 , 968 , 304 , 65 , 105 , 979 , 551 , 286 , 56 , 857 , 673 , 534 , 732 , 989 , 559 , 574 , 125 , 307 , 181 , 518 , 2 , 492 , 430 , 484 , 216 , 542 , 77 , 872 , 193 , 576 , 113 , 103 ]
+districtUninominal_6_nameOfDistrict : 6 :// Name of the uninominal district
+districtUninominal_6_concentratedMajorParty : false :// contains a major party?
+districtUninominal_6_nameMajorParty : 0 : //name of the major party
+districtUninominal_6_listOfVoters :[644 , 811 , 744 , 273 , 905 , 203 , 1 , 244 , 876 , 583 , 497 , 93 , 114 , 955 , 444 , 976 , 495 , 135 , 637 , 836 , 261 , 935 , 940 , 977 , 958 , 616 , 131 , 222 , 592 , 985 , 983 , 268 , 927 , 80 , 536 , 585 , 478 , 59 , 964 , 617 , 18 , 506 , 493 , 274 , 155 , 839 , 674 , 36 , 874 , 443 , 5 , 149 , 217 , 260 , 990 , 951 , 642 , 177 , 166 , 931 , 123 , 263 , 293 , 594 , 925 , 179 , 228 , 835 , 481 , 789 , 441 , 792 , 649 , 638 , 89 , 308 , 267 , 763 , 220 , 46 , 946 , 189 , 966 , 798 , 759 , 313 , 172 , 469 , 301 , 205 , 902 , 426 , 10 , 477 , 725 , 735 , 483 , 687 , 540 , 110 ]
+districtUninominal_7_nameOfDistrict : 7 :// Name of the uninominal district
+districtUninominal_7_concentratedMajorParty : false :// contains a major party?
+districtUninominal_7_nameMajorParty : 0 : //name of the major party
+districtUninominal_7_listOfVoters :[208 , 970 , 178 , 99 , 437 , 472 , 454 , 764 , 299 , 42 , 933 , 6 , 300 , 225 , 602 , 710 , 292 , 733 , 525 , 578 , 926 , 428 , 117 , 693 , 485 , 915 , 879 , 960 , 852 , 17 , 240 , 667 , 573 , 9 , 846 , 746 , 645 , 521 , 230 , 888 , 449 , 628 , 214 , 974 , 248 , 981 , 783 , 499 , 555 , 914 , 213 , 957 , 910 , 508 , 897 , 800 , 658 , 109 , 739 , 41 , 82 , 45 , 302 , 996 , 919 , 489 , 984 , 699 , 527 , 586 , 486 , 182 , 490 , 29 , 71 , 947 , 982 , 834 , 22 , 294 , 661 , 787 , 858 , 95 , 507 , 53 , 999 , 572 , 717 , 766 , 7 , 533 , 726 , 997 , 603 , 838 , 72 , 520 , 84 , 510 ]
+districtUninominal_8_nameOfDistrict : 8 :// Name of the uninominal district
+districtUninominal_8_concentratedMajorParty : false :// contains a major party?
+districtUninominal_8_nameMajorParty : 0 : //name of the major party
+districtUninominal_8_listOfVoters :[298 , 118 , 60 , 943 , 855 , 963 , 19 , 47 , 786 , 539 , 69 , 824 , 754 , 27 , 992 , 66 , 664 , 665 , 756 , 211 , 543 , 631 , 741 , 445 , 938 , 285 , 671 , 207 , 83 , 755 , 470 , 882 , 900 , 581 , 439 , 550 , 866 , 622 , 727 , 262 , 731 , 476 , 715 , 247 , 236 , 255 , 928 , 749 , 44 , 235 , 941 , 184 , 801 , 942 , 841 , 768 , 750 , 896 , 986 , 317 , 70 , 608 , 314 , 899 , 817 , 438 , 561 , 627 , 605 , 912 , 911 , 154 , 709 , 55 , 849 , 456 , 218 , 562 , 612 , 743 , 651 , 505 , 822 , 579 , 104 , 785 , 58 , 564 , 457 , 624 , 711 , 523 , 762 , 769 , 827 , 924 , 819 , 571 , 723 , 173 ]
+districtUninominal_9_nameOfDistrict : 9 :// Name of the uninominal district
+districtUninominal_9_concentratedMajorParty : false :// contains a major party?
+districtUninominal_9_nameMajorParty : 0 : //name of the major party
+districtUninominal_9_listOfVoters :[494 , 893 , 453 , 277 , 212 , 153 , 716 , 706 , 81 , 613 , 524 , 134 , 980 , 728 , 466 , 265 , 450 , 100 , 64 , 102 , 448 , 491 , 196 , 258 , 796 , 778 , 194 , 86 , 758 , 804 , 270 , 832 , 831 , 275 , 32 , 782 , 686 , 57 , 157 , 757 , 712 , 315 , 96 , 774 , 875 , 529 , 288 , 863 , 11 , 320 , 887 , 719 , 290 , 467 , 169 , 159 , 870 , 98 , 552 , 854 , 730 , 767 , 795 , 861 , 20 , 48 , 519 , 446 , 816 , 427 , 595 , 625 , 751 , 815 , 740 , 652 , 455 , 973 , 137 , 721 , 541 , 538 , 987 , 895 , 516 , 452 , 498 , 810 , 681 , 948 , 475 , 803 , 678 , 818 , 272 , 920 , 565 , 881 , 734 , 544 ]
+districtUninominal_10_nameOfDistrict : 10 :// Name of the uninominal district
+districtUninominal_10_concentratedMajorParty : false :// contains a major party?
+districtUninominal_10_nameMajorParty : 0 : //name of the major party
+districtUninominal_10_listOfVoters :[589 , 433 , 806 , 13 , 784 , 140 , 809 , 152 , 460 , 76 , 724 , 892 , 547 , 221 , 39 , 447 , 198 , 246 , 615 , 853 , 597 , 26 , 856 , 847 , 903 , 607 , 496 , 465 , 512 , 701 , 692 , 939 , 923 , 161 , 635 , 975 , 894 , 192 , 305 , 264 , 580 , 691 , 269 , 587 , 291 , 432 , 775 , 278 , 844 , 742 , 657 , 436 , 4 , 695 , 94 , 517 , 860 , 30 , 820 , 698 , 901 , 777 , 554 , 316 , 669 , 609 , 145 , 720 , 535 , 28 , 219 , 238 , 306 , 513 , 961 , 907 , 965 , 675 , 522 , 688 , 950 , 136 , 708 , 683 , 971 , 54 , 1000 , 703 , 91 , 793 , 814 , 606 , 867 , 738 , 106 , 473 , 604 , 185 , 319 , 648 ]
+districtPlurinominal_1_name : 1 :// Name of the plurinominal district(roman= I)
+districtPlurinominal_1_listOfDistricts : [3, 7]
+districtPlurinominal_2_name : 2 :// Name of the plurinominal district(roman= II)
+districtPlurinominal_2_listOfDistricts : [1, 2]
+districtPlurinominal_3_name : 3 :// Name of the plurinominal district(roman= III)
+districtPlurinominal_3_listOfDistricts : [5, 4]
+districtPlurinominal_4_name : 4 :// Name of the plurinominal district(roman= IV)
+districtPlurinominal_4_listOfDistricts : [10, 8]
+districtPlurinominal_5_name : 5 :// Name of the plurinominal district(roman= V)
+districtPlurinominal_5_listOfDistricts : [9, 6]
+
